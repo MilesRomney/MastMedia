@@ -1,0 +1,45 @@
+---
+layout: default
+title: MAST by Salt Lake Film Society
+---
+<!-- CONTENT -->
+<div class="macro_tm_content">
+
+    <!-- HOME -->
+    <div class="macro_tm_section">
+        <div class="macro_tm_top_bg_wrap">
+            <div class="top_bg" style="background-image: url({{ page.banner_image }});">
+            </div>
+            <div class="top_bg_content blog">
+                <div class="macro_tm_blog_title_holder_main">
+                    <span class="heading">{{ page.title }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="macro_tm_section">
+        <div class="macro_tm_single_section_wrap color-scheme {{ page.color_scheme }}">
+            <div class="container">
+                <div class="inner">
+                    <div class="main_body_wrap">
+                        <div class="macro_tm_single_page_section">
+                            <div class="blog_definition_wrap">
+                                <div class="macro_tm_single_main_information_wrap">
+                                    <div class="macro_tm_title_holder services">
+                                        <span class="title_section subheading">{{ page.subtitle }}</span>
+                                        <span class="title_name accent">Posted By {{ page.author }} on {{ page.date | date_to_long_string }}</span>
+                                    </div>
+                                </div>
+                                <div class="macro_tm_blog_definition_wrap article-text" markdown="1">
+                                    {{ content }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /HOME -->    
+</div>
+<!-- /CONTENT -->
