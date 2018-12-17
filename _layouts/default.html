@@ -1,11 +1,107 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
-    {{ content }}
-  </body>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="description" content="Name of your web site">
+<meta name="author" content="marketify">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>{{page.title}}</title>
+
+<!-- STYLES -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins|Muli|Nixie+One" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/css/plugins.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+<link rel="shortcut icon" type="image/x-icon" href="/assets/img/mast-favicon.png" />
+<!--[if lt IE 9]> <script type="text/javascript" src="/assets/js/modernizr.custom.js"></script> <![endif]-->
+<!-- /STYLES -->
+
+</head>
+
+<body>
+
+<!-- WRAPPER ALL -->
+<div class="macro_tm_wrapper_all" data-audio="on">
+	
+  <!-- HEADER -->
+  <header class="macro_tm_header report_scroll_state">
+  <div class="in">
+    <div class="logo">
+      <a class="light" href="#"><img src="/assets/img/branding/mast-white-small.png" alt="" /></a>
+      <a class="dark" href="#"><img src="/assets/img/branding/mast-white-small.png" alt="" /></a>
+    </div>
+    <div class="in_relative">
+      <div class="navigation_list_wrap">
+        <div class="menu">
+          <ul class="anchor_nav">
+            <li><a href="/#now">Now</a></li>
+            <li><a href="/#mission">Mission</a></li>
+            <li><a href="/#now">Contests</a></li>
+            <li><a href="/#labs">Labs</a></li>
+            <li><a href="/#fellowship">Fellowship</a></li>
+            <li><a target="_DONATE" href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E157586&id=1">Donate</a></li>
+            <li><a target="_SLFS" href="https://www.slfs.org">SLFS</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        {% include social_icons.html %}
+        <div class="macro_tm_trigger">
+          <div class="hamburger hamburger--collapse-r">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MOBILE MENU -->
+  <div class="macro_tm_mobile_menu_wrap">
+    <ul class="anchor_nav">
+      <li><a href="/#now">Now</a></li>
+      <li><a href="/#mission">Mission</a></li>
+      <li><a href="/#now">Contests</a></li>
+      <li><a href="/#labs">Labs</a></li>
+      <li><a href="/#fellowship">Fellowship</a></li>
+      <li><a target="_DONATE" href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E157586&id=1">Donate</a></li>
+      <li><a target="_SLFS" href="https://www.slfs.org">SLFS</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </div>
+  </header>
+  <!-- /HEADER -->
+
+  {{content}}
+
+  <!-- FOOTER -->
+  <footer class="macro_tm_footer">
+    <div class="macro_tm_footer_copyright color-scheme navy">
+      <p class="copyright">© 2018 Salt Lake Film Society</p>
+    </div>
+    </footer>
+    <!-- /FOOTER -->
+        
+  <a class="macro_tm_totop" href="#"><i class="xcon-angle-up"></i></a>       	
+</div>
+
+<!-- / WRAPPER ALL -->
+
+<!-- SCRIPTS -->
+<script src="/assets/js/jquery.js"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/init.js"></script>
+<script src="/assets/js/mast.js"></script>
+<!-- /SCRIPTS -->
+
+</body>
 </html>
