@@ -53,6 +53,8 @@ $scheme-snow-text-color: $black;
 /*	HEADER
 /*---------------------------------------------------*/
 .macro_tm_header {
+    z-index: 1001;
+    
     &.scroll {
         background: $accent-color;
 
@@ -181,7 +183,7 @@ $scheme-snow-text-color: $black;
         z-index: 10;
 
         @media (max-width: $mobile-width) {
-            background: url(/assets/img/snakes_by_jake_wyatt.jpg) no-repeat;
+            background: url(https://s3.amazonaws.com/sporklabs/MastStudio/img/snakes_by_jake_wyatt.jpg) no-repeat;
         }
 
         .statement {
@@ -338,6 +340,24 @@ $scheme-snow-text-color: $black;
     }
 }
 
+.macro_tm_mobile_menu_wrap {
+    background-color: $accent-color;
+    height: 1000px;
+
+    li {
+        a {
+            background-color: #000;
+            color: #FA7268;
+            font-size: 25px;
+            font-weight: 700;
+            text-align: center;
+            padding: 0 20px;
+            width: 88%;
+            display: block;
+        }
+    }
+}
+
 .underlying-header {
     font-family: Muli, sans-serif;
     font-size: 130px;
@@ -346,6 +366,13 @@ $scheme-snow-text-color: $black;
     height: 295px;
     line-height: 100px;
     margin-bottom: -125px;
+
+    @media (max-width: $mobile-width) {
+        font-size: 70px;
+        line-height: 60px;
+        height: 220px;
+        margin-bottom: -100px;
+    }
 }
 
 .inline-header {
@@ -355,6 +382,12 @@ $scheme-snow-text-color: $black;
     text-transform: uppercase;
     height: 295px;
     line-height: 100px;
+
+    @media (max-width: $mobile-width) {
+        font-size: 70px;
+        line-height: 60px;
+        height: 220px;
+    }
 }
 
 .article-text {
@@ -376,6 +409,10 @@ $scheme-snow-text-color: $black;
 #home {
     .article-text {
         width: 50%;
+        
+        @media (max-width: $mobile-width) {
+            width: 80%;
+        }
     }
 }
 
@@ -385,6 +422,10 @@ $scheme-snow-text-color: $black;
 
 .half-width {
     width: 40%;
+
+    @media (max-width: $mobile-width) {
+        width: 48%;
+    }
 }
 
 .left {

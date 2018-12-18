@@ -133,7 +133,8 @@ function macro_tm_hamburger(){
 	
 	var hamburger 		= jQuery('.hamburger');
 	var mobileMenu		= jQuery('.macro_tm_mobile_menu_wrap');
-	
+	var header			= jQuery('.macro_tm_header');
+
 	hamburger.on('click',function(){
 		var element 	= jQuery(this);
 		
@@ -142,6 +143,7 @@ function macro_tm_hamburger(){
 			mobileMenu.slideUp();
 		}else{
 			element.addClass('is-active');
+			header.addClass('scroll');
 			mobileMenu.slideDown();
 		}
 		return false;

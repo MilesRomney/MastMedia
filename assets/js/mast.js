@@ -1,6 +1,9 @@
 // Desktop only
 if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     mast_init_youtube();
+// Mobile only
+} else {
+    prep_mobile_menu();
 }
 
 // Universal
@@ -62,4 +65,11 @@ function mast_cycle_statements(which) {
         statements.removeClass("hovered");
         clearTimeout(nextTimeout);
     })
+}
+
+function prep_mobile_menu() {
+    $('.macro_tm_mobile_menu_wrap .anchor_nav a').click(function(){
+        $('.macro_tm_mobile_menu_wrap').slideUp();
+        $('.hamburger').removeClass('is-active');
+    });
 }
