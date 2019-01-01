@@ -23,7 +23,6 @@ jQuery(document).ready(function(){
 	macro_tm_magnific_popup();
 	macro_tm_blog_animation();
 	macro_tm_totop();
-	macro_tm_totop_myhide();
 	macro_tm_audiobox();
 	macro_tm_audio_off();
 	macro_tm_jarallax();
@@ -38,7 +37,6 @@ jQuery(document).ready(function(){
 	
 	jQuery(window).on('scroll',function(){
 		//e.preventDefault();
-		macro_tm_totop_myhide();
 		macro_tm_nav_bg_scroll();
 		
 	});
@@ -406,21 +404,6 @@ function macro_tm_totop(){
 		jQuery("html, body").animate({ scrollTop: 0 }, 'slow');
 		return false;
 	});
-}
-function macro_tm_totop_myhide(){
-	
-	"use strict";
-	
-	var toTop		=jQuery(".macro_tm_totop");
-	if(toTop.length){
-		var topOffSet 	=toTop.offset().top;
-		
-		if(topOffSet > 1000){
-			toTop.addClass('opened');	
-		}else{
-			toTop.removeClass('opened');
-		}
-	}
 }
 
 // -----------------------------------------------------

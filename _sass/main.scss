@@ -8,7 +8,9 @@ $font-family: Helvetica;
 $mobile-width: 1040px;
 $mobile-height: 895px;
 $white: #fff;
-$black: #000;
+$black: rgb(0, 0, 0);
+$light-grey: rgb(200, 200, 200);
+$discord: #7289da;
 
 $scheme-plum-color: #661f4f;
 $scheme-plum-accent-color: #00ff7e;
@@ -30,12 +32,12 @@ $scheme-snow-accent-color: #661f4f;
 $scheme-snow-heading-color: #661f4f;
 $scheme-snow-text-color: $black;
 
-@mixin ease() {
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -ms-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
+@mixin ease($duration: .4s) {
+    -webkit-transition: all $duration ease;
+    -moz-transition: all $duration ease;
+    -ms-transition: all $duration ease;
+    -o-transition: all $duration ease;
+    transition: all $duration ease;
 }
 
 @mixin text-outline($color, $stroke-width, $shadow-width) {
@@ -47,6 +49,33 @@ $scheme-snow-text-color: $black;
        1px -1px 0 $color,
        -1px 1px 0 $color,
         1px 1px 0 $color;
+}
+
+@mixin button($background-color: $accent-color, $text-color: $white, $border-color: $background-color) {
+    display: inline-block;
+    font-family: $font-family !important;
+    font-weight: 700 !important;
+    background-color: $background-color;
+    color: $text-color;
+    font-size: 20px !important;
+    line-height: 42px !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 30px !important;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    &:hover {
+        @include text-outline($black, 0, 2px);
+        box-shadow: 2px 2px 0px 0px rgb(0, 0, 0) !important;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding: 5px 20px !important;
+    }
 }
 
 /*---------------------------------------------------*/
@@ -118,7 +147,7 @@ $scheme-snow-text-color: $black;
 }
 
 /*---------------------------------------------------*/
-/*	HOME CONTENT
+/*	HOME
 /*---------------------------------------------------*/
 #home {
     #youtube {
@@ -254,22 +283,85 @@ $scheme-snow-text-color: $black;
 
 
 /*---------------------------------------------------*/
+/*	CONTESTS
+/*---------------------------------------------------*/
+#contests {
+    padding-top: 100px;
+
+    background: repeating-linear-gradient(
+        45deg,
+        rgba($scheme-plum-color, 1),
+        rgba($scheme-plum-color, 1) 20px,
+        rgba($scheme-plum-color, 0.8) 20px,
+        rgba($scheme-plum-color, 0.8) 40px
+    );
+
+    .underlying-header {
+        font-family: Pacifico;
+        text-transform: none;
+        font-weight: 400;
+        margin-bottom: -25px;
+    }
+}
+
+/*---------------------------------------------------*/
+/*	POSTS
+/*---------------------------------------------------*/
+.top_bg_content {
+    &.blog {
+        .macro_tm_blog_title_holder_main {
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+
+            @media (max-width: $mobile-width) {
+                bottom: -10px;
+            }
+
+            .heading {
+                text-transform: uppercase;
+
+                @media (max-width: $mobile-width) {
+                    font-size: 25px;
+                }    
+            }
+        }
+    }
+}
+
+
+/*---------------------------------------------------*/
 /*	ELEMENTS
 /*---------------------------------------------------*/
-.macro_tm_purchase_button, .input_wrap {
+a.button {
+    @include button($accent-color, $white);
+
+    &.half-width {
+        width: 35%;    
+    }    
+}
+
+.donate {
     a {
-        font-family: $font-family !important;
-        font-weight: 700 !important;
-        border-color: $accent-color !important;
-        background-color: $accent-color;
-        font-size: 20px !important;
-        padding: 5px !important;
+        width: 160px;
 
-        cursor: pointer;
+        &.scroll {
+            -webkit-animation: jiggle 0.2s 10;
+            -moz-animation-duration: 0.2s;
+            -moz-animation-name: jiggle;
+            -moz-animation-iteration-count: 10;
+            -webkit-transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
 
-        &:hover {
-            @include text-outline($black, 0, 2px);
-            box-shadow: 2px 2px 0px 0px rgb(0, 0, 0) !important;
+            .smile {
+                &::after { 
+                    content: "( ͡° ͜ʖ ͡° )";
+                }
+            }
+        }
+    
+        span {
+            font-weight: 400;
         }
     }
 }
@@ -294,16 +386,11 @@ $scheme-snow-text-color: $black;
         color: $accent-color;
     }
 
-    input, textarea {
-        background-color: $scheme-navy-color !important;
-        border-color: $scheme-navy-accent-color !important;
-        color: $scheme-navy-accent-color !important;
-        margin-bottom: 10px;
-        width: 250px;
-    }
-
-    a.send_message {
-        width: 240px;
+    a#send_message {
+        padding: 5px 30px !important;
+        float: right;
+        position: relative;
+        top: 10px;
     }
 
     .general.willow {
@@ -420,14 +507,6 @@ $scheme-snow-text-color: $black;
     clear: both;
 }
 
-.half-width {
-    width: 40%;
-
-    @media (max-width: $mobile-width) {
-        width: 48%;
-    }
-}
-
 .left {
     float: left;
     clear: none;
@@ -440,6 +519,75 @@ $scheme-snow-text-color: $black;
 
 .padded-bottom {
     padding-bottom: 100px;
+}
+
+#discord {
+    position: fixed;
+    width: 275px;
+    height: 400px;
+    right: -275px;
+    top: 175px;
+    z-index: 1001;
+    opacity: 1;
+
+    @media (max-width: $mobile-width) {
+        top: 100px;
+    }
+
+    @include ease();
+
+    .button {
+        cursor: pointer;
+        height: 64px;
+        width: 50px;
+        font-size: 30px;
+        position: relative;
+        left: -60px;
+        top: 74px;
+        padding: 5px 10px;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        color: $white;
+        background: $discord;
+
+        @include ease(.8s);
+
+        @media (max-width: $mobile-width) {
+            height: 71px;
+            top: 81px;
+            font-size: 34px;
+        }
+    }
+
+    &.active {
+        right: 15px;
+
+        .button {
+            font-size: 20px;
+        }
+    }
+
+    &.scroll {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes jiggle {
+    0% {
+        -moz-transform: rotate(-1deg);
+    }
+    50% {
+        -moz-transform: rotate(1deg);
+    }
+}
+
+@-webkit-keyframes jiggle {
+    0% {
+        -webkit-transform: rotate(-1deg);
+        }
+    50% {
+        -webkit-transform: rotate(1deg);
+    }
 }
 
 /*---------------------------------------------------*/
@@ -500,6 +648,73 @@ $scheme-snow-text-color: $black;
                 border-color: $scheme-navy-accent-color;
                 background-color: $scheme-navy-color;
                 color: $scheme-navy-accent-color;
+            }
+        }
+
+        a.button {
+            @include button($scheme-navy-color, $scheme-navy-accent-color, $scheme-navy-accent-color);
+        }
+
+        .cognito {
+            button {
+                border-color: $scheme-navy-accent-color !important;
+                background-color: $scheme-navy-color !important;
+                color: $scheme-navy-accent-color !important;
+
+                &:hover {
+                    @include text-outline($light-grey, 0, 2px);
+                    box-shadow: 2px 2px 0px 0px $light-grey !important;
+                }
+            }
+
+            .c-forms-form {
+                .c-background-highlight {
+                    background-color: $scheme-navy-accent-color;
+                    color: $white;
+                    border-radius: 3px;
+                }
+
+                label,
+                legend {
+                    color: $scheme-navy-accent-color;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+
+                .c-text-singleline,
+                .c-text-multiplelines,
+                .c-website {
+                    .c-label {
+                        position: relative;
+                        top: 13px;
+                        left: 15px;
+                        z-index: 100;
+                        background: $scheme-navy-color;
+                        padding: 0 5px;
+                    }
+                }
+
+                .c-choice-option,
+                .c-yesno-radiobuttons {
+                    label {
+                        color: $black;
+                        padding: 20px;
+                    }
+                }
+
+                .c-editor {
+                    input[type=text],
+                    textarea {
+                        border-color: $scheme-navy-accent-color;
+                        border-radius: 3px;
+                        background-color: $scheme-navy-color;
+                        color: $white !important;
+
+                        &:focus {
+                            background: $scheme-navy-color;
+                        }
+                    }
+                }
             }
         }
     }
@@ -579,10 +794,195 @@ $scheme-snow-text-color: $black;
 
         .macro_tm_purchase_button {
             a {
-                border-color: $scheme-snow-accent-color;
-                background-color: $scheme-snow-color;
-                color: $scheme-snow-accent-color;
+                border-color: $scheme-snow-accent-color !important;
+                background-color: $scheme-snow-color !important;
+                color: $scheme-snow-accent-color !important;
+
+                &:hover {
+                    @include text-outline($light-grey, 0, 2px);
+                    box-shadow: 2px 2px 0px 0px $light-grey !important;
+                }        
             }
+        }
+        .cognito {
+            button {
+                border-color: $scheme-snow-accent-color !important;
+                background-color: $scheme-snow-color !important;
+                color: $scheme-snow-accent-color !important;
+
+                &:hover {
+                    @include text-outline($light-grey, 0, 2px);
+                    box-shadow: 2px 2px 0px 0px $light-grey !important;
+                }        
+            }
+
+            .c-forms-form {
+                .c-background-highlight {
+                    background-color: $scheme-snow-accent-color;
+                    color: $white;
+                    border-radius: 3px;
+
+                    @media (max-width: $mobile-width) {
+                        color: rgba($white, 0);
+                    }
+                }
+
+                label,
+                legend {
+                    color: $scheme-snow-accent-color;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+
+                .c-text-singleline,
+                .c-text-multiplelines,
+                .c-website {
+                    .c-label {
+                        position: relative;
+                        top: 10px;
+                        left: 15px;
+                        z-index: 100;
+                        background: $white;
+                        padding: 0 5px;
+                    }
+                }
+
+                .c-choice-option,
+                .c-yesno-radiobuttons {
+                    label {
+                        color: $black;
+                        padding: 20px;
+                    }
+                }
+
+                .c-editor {
+                    input[type=text],
+                    textarea {
+                        border-color: $scheme-snow-accent-color;
+                        border-radius: 3px;
+
+                        &:focus {
+                            background: $white;
+                        }
+                    }
+                }
+            
+                .c-forms-confirmation-message {
+                    background-color: $scheme-snow-accent-color;
+                    color: $white;
+                    padding: 20px 30px;
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*---------------------------------------------------*/
+/*	COGNITO FORMS
+/*---------------------------------------------------*/
+.cognito {
+    width: calc(80% + 16px);
+    max-width: 1250px !important;
+
+    > div {
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+
+    .c-forms-form {
+        .c-forms-form-title {
+            padding-bottom: 75px !important;
+
+            h2 {
+                font-family: Poppins !important;
+                font-size: 20px !important;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+
+        h3 {
+            font-family: Poppins !important;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .c-label, 
+        .c-choice-option,
+        .c-yesno-radio {
+            font-family: Poppins !important;
+            font-size: 14px;
+        }
+
+        .c-html {
+            p {
+                font-family: Poppins !important;
+                font-size: 14px;
+                line-height: 30px;
+            }
+        }
+
+        .c-validation {
+            background: none !important;
+            color: red !important;
+            font-size: 14px;
+            font-weight: bold;        
+        }
+
+        [data-field=ContestAndLicensingTerms] {
+            .c-html {
+                a {
+                    font-family: inherit;
+                    font-weight: 700;
+                }
+            }
+        }
+ 
+        [data-field=Donation] {
+            .c-html {
+                a {
+                    @include button($accent-color, $white);
+
+                    text-decoration: none;
+                    color: $white !important;
+        
+                    &:hover {
+                        text-decoration: none;
+                    }     
+                }
+            }
+        }
+    
+        .c-forms-confirmation-message {
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 3px;
+            padding: 10px;
+        }
+    
+        button {
+            width: 180px;
+            @include button($accent-color, $white);
+        }
+
+        .c-fileupload-dropzone {
+            @media (max-width: $mobile-width) {
+                background: none !important;
+
+                .c-upload-button {
+                    margin: 0;
+
+                    button {
+                        margin: 0;
+                    }
+                }
+            }                   
         }
     }
 }

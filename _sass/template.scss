@@ -3318,7 +3318,6 @@ img.svg{
 	overflow: hidden;
 	background: #FA7268;
 	opacity: 0;
-	visibility: hidden;
 	text-align: center;
 	
 	-webkit-transition: all .5s ease;
@@ -3326,13 +3325,14 @@ img.svg{
 	    -ms-transition: all .5s ease;
 	     -o-transition: all .5s ease;
 	        transition: all .5s ease;
+
+	&.scroll {
+		opacity: 1;
+		bottom: 20px;
+	}
+		
 }
 .macro_tm_totop:hover{box-shadow: 0px 10px 35px 0px rgba(188,1,39,.2);}
-.macro_tm_totop.opened{
-	opacity: 1;
-	visibility: visible;
-	bottom: 30px;
-}
 .macro_tm_totop i{color: #FFFFFF;}
 /*---------------------------------------------------*/
 /*	23) AUDIOBOX

@@ -2,11 +2,16 @@
 layout: post
 title: "Micro-docs Contest 2019"
 subtitle: "Call for Submissions"
+description: "Salt Lake Film Society’s MAST announces its 2019 documentary contest, 'Micro-docs'."
 categories: [contests]
 author: "Miles Romney"
 color_scheme: "snow"
+preview_image: "/assets/img/posts/micro-docs.jpg"
 banner_image: "/assets/img/posts/micro-docs.jpg"
+cognito_form: 2
 ---
+
+<a class="button" href="#cognito"><span class="xcon-forward"></span> Submit now!</a>
 
 We are, all of us, defined by our stories. There are nearly 8 billion of them unfolding every day: people, lives lived. Knowing these stories is the stuff of our empathy, our hope, our ambitions. Our evolution. They give us all our consciousness, our soul. And we few are the ones who tell these stories.
 
@@ -17,8 +22,6 @@ Entrants are encouraged to collaborate in groups, but may work alone, in produci
 # Submissions
 
 Video: All submissions must be a video documentary between 5 and 15 minutes in length, at least 1080p in resolution (4k preferred), should be accurate, should be emotionally impactful but avoid hyperbole, should touch the history, reality, challenges, progress of, or potential solutions to, racism and inequality. Depicting emotionally difficult subject matter is in keeping with the spirit of the contest, but providing a ray of hope is highly encouraged. We’re looking to inspire people to betterment, and not inadvertently exacerbate hate.
-
-Submissions will be accepted through https://contests.mastmedia.org beginning on 1 January, 2019.
 
 # Awards
 
@@ -31,11 +34,3 @@ Awards will be announced on 4 March.
 # Deadline
 
 All submissions must be received before noon MST on 15 February, 2019.
-
-# Licensing
-
-By submitting work to SLFS Mast for consideration in the Micro-docs contest, you grant SLFS, MASt!, and its affiliates unlimited, non-exclusive license to publish in part, reference, and promote the work for a period of 3 years.
-
-If your work is selected for an award, you grant SLFS, MASt!, and its affiliates unlimited, non-exclusive license to publish in full, reference, and promote the work for a period of 3 years
-
-Full licensing terms will be available in the submissionn system beginning on 1 January.

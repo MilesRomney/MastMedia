@@ -1,15 +1,48 @@
-<div class="contact">
-    <form method="POST" action="https://formspree.io/MastMediaContact@saltlakefilmsociety.org" target="_CONTACT" class="contact_form" id="contact_form">
-        <div class="input_wrap">
-            <ul>
-                <li>
-                    <div class="inner">
-                        <input id="email" name="email" type="text" placeholder="Email Address" />
-                        <textarea id="message" name="message" placeholder="Message"></textarea>
-                        <a id="send_message" class="send_message" href="javascript:void(0);" onclick="$('#contact_form').submit();">Send message</a>
-                    </div>
-                </li>
-            </ul>
+<!-- CONTACT -->
+<div class="macro_tm_section color-scheme navy" id="contact">
+    <div class="macro_tm_contact_wrap">
+        <div class="macro_tm_title_holder inline-header heading">
+            Get in touch
         </div>
-    </form>
+        <div class="container">
+            <div class="in">
+                <div class="left">
+                    <div class="general willow">
+                        <span class="title">Visit us</span>
+                        <span class="line"></span>
+                        <ul>
+                            <li><i class="xcon-phone"></i><span>801-321-0310</span></li>
+                            <li><span>111 E Broadway (300 S), Suite 99<br />Salt Lake City, UT 84111</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="general">
+                        <span class="title">Send us a message</span>
+                        <span class="line"></span>
+                    </div>
+
+                    <div class="contact cognito">
+                        <form method="POST" action="https://formspree.io/MastMediaContact@saltlakefilmsociety.org" target="_CONTACT" class="contact_form c-forms-form" id="contact_form">
+                            <div class="input_wrap">
+                                <ul>
+                                    <li>
+                                        <div class="inner c-text-singleline c-editor">
+                                            <label class="c-label">E-mail address</label>
+                                            <input id="email" name="email" type="text" />
+                                            <label class="c-label">Message</label>
+                                            <textarea id="message" name="message"></textarea>
+                                            <a id="send_message" class="button" href="javascript:void(0);" onclick="$('#contact_form').submit();">Send message</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- /CONTACT -->

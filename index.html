@@ -15,7 +15,7 @@ title: MAST by Salt Lake Film Society
                     MAST is a media accelerator studio, a non-profit program of the Salt Lake Film Society that grows artists into artist entrepreneurs.
                 </div>
             </div>
-            <div class="macro_tm_purchase_button donate"><a target="_DONATE" href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E157586&id=1">Donate</a></div>
+            <div class="donate"><a class="button report_scroll_state" target="_DONATE" href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E157586&id=1">Donate <span class="smile"></span></a></div>
         </div>
     </div>
     <!-- /HOME -->
@@ -29,48 +29,24 @@ title: MAST by Salt Lake Film Society
             <div class="macro_tm_list_wrap section_blog" data-column="3" data-space="20">
                 <div class="container">
                     <ul class="macro_list another_animation">
-                        <li class="list_li hideforanimation">
-                            <div class="list_in">
-                                <a href="#"><img class="image" src="/assets/img/posts/people-of-earth.jpg" alt="" /></a>
-                                <a href="/contests/2018/12/17/people-of-earth-contest-2019.html"><div class="overlay_blog"></div></a>
-                                <div class="blog_definitions_wrap">
-                                    <p class="date accent">17 December 2018</p>
-                                    <span class="title_item"><a href="/contests/2018/12/17/people-of-earth-contest-2019.html">People of Earth</a></span>
-                                    <p class="description_blog">Salt Lake Film Society’s MAST announces its 2019 writing and photography contest, <em>People of Earth</em>.</p>
+                        {% for post in site.posts %}
+                            <li class="list_li hideforanimation">
+                                <div class="list_in">
+                                    <a href="{{ post.url }}}}"><img class="image" src="{{ post.preview_image }}" alt="" /></a>
+                                    <a href="{{ post.url }}"><div class="overlay_blog"></div></a>
+                                    <div class="blog_definitions_wrap">
+                                        <p class="date accent">{{ post.date | date_to_long_string }}</p>
+                                        <span class="title_item"><a href="{{ post.url }}">{{ post.title }}</a></span>
+                                        <p class="description_blog">{{ post.description }}</p>
+                                    </div>
+                                    <div class="category_blog accent-bg">
+                                        {% for category in post.categories %}
+                                            <span>{{ category }}</span>
+                                        {% endfor %}
+                                    </div>
                                 </div>
-                                <div class="category_blog accent-bg">
-                                    <span>Contests</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list_li hideforanimation">
-                            <div class="list_in">
-                                <a href="#"><img class="image" src="/assets/img/posts/micro-docs.jpg" alt="" /></a>
-                                <a href="/contests/2018/12/17/micro-docs-contest-2019.html"><div class="overlay_blog"></div></a>
-                                <div class="blog_definitions_wrap">
-                                    <p class="date accent">17 December 2018</p>
-                                    <span class="title_item"><a href="/contests/2018/12/17/micro-docs-contest-2019.html">Micro-docs</a></span>
-                                    <p class="description_blog">Salt Lake Film Society’s MAST announces its 2019 documentary contest, <em>Micro-docs</em>.</p>
-                                </div>
-                                <div class="category_blog accent-bg">
-                                    <span>Contests</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list_li hideforanimation">
-                            <div class="list_in">
-                                <a href="#"><img class="image" src="/assets/img/posts/voices-seen.jpg" alt="" /></a>
-                                <a href="/contests/2018/12/17/voices-seen-contest-2019.html"><div class="overlay_blog"></div></a>
-                                <div class="blog_definitions_wrap">
-                                    <p class="date accent">17 December 2018</p>
-                                    <span class="title_item"><a href="/contests/2018/12/17/voices-seen-contest-2019.html">Voices Seen</a></span>
-                                    <p class="description_blog">Salt Lake Film Society’s MAST announces its 2019 animation contest, <em>Voices Seen</em>.</p>
-                                </div>
-                                <div class="category_blog accent-bg">
-                                    <span>Contests</span>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -92,8 +68,8 @@ title: MAST by Salt Lake Film Society
                 <p>Join us.</p>
 
                 <div class="buttons">
-                    <div class="macro_tm_purchase_button half-width left"><a href="#now">Contests</a></div>
-                    <div class="macro_tm_purchase_button half-width right"><a target="_DONATE" href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E157586&id=1">Donate</a></div>
+                    <a class="button half-width left" href="#now">Contests</a>
+                    <a class="button half-width right" target="_DONATE" href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E157586&id=1">Donate</a>
                 </div>
             </div>
         </div>
@@ -102,53 +78,24 @@ title: MAST by Salt Lake Film Society
 
     <!-- PROGRAM -->
     <div class="macro_tm_section color-scheme custard padded-bottom" id="program">
-            <div class="macro_tm_title_holder underlying-header heading">
-                The Program
-            </div>
-            <div class="macro_tm_about_me_wrap">
-                <div class="article-text">
-                    <div class="subheading" id="labs">Labs</div>
-                    <p>In keeping with MAST's forward-thinking mission, our labs will cover topics ranging from novel uses of free-to-use and open-source software for keeping production costs low, to guerilla production tactics for indie content creators, to business and brand-building essentials for artist entrepreneurs. Instructors will be subject matter experts, and wherever possible, prominent influencers and advocates for the technologies and methodologies they teach.</p>
-                    <p>Labs are designed as an essential element of the MAST Fellowship, but are open to the public for a fee, both in-person or online.</p>
-                    <p>Labs will begin in April 2019, and will be announced in February.</p>
-
-                    <div class="subheading" id="fellowship">Fellowship</div>
-                    <p>The MAST Fellowship is a curated program of labs, mentorships, pitch and networking events, production subsidizing, facility and equipment offerings, and sponsor matching.</p>
-                    <p>Between 5 and 10 MAST Fellows will be selected by invitation, and from among the winners of the 2019 MAST contests, <em>People of Earth</em>, <em>Micro-docs</em>, and <em>Voices Seen</em>.</p>
-                </div>
-            </div>
+        <div class="macro_tm_title_holder underlying-header heading">
+            The Program
         </div>
-        <!-- /PROGRAM -->
-        
-    <!-- CONTACT -->
-    <div class="macro_tm_section color-scheme navy" id="contact">
-        <div class="macro_tm_contact_wrap">
-            <div class="macro_tm_title_holder inline-header heading">
-                Get in touch
-            </div>
-            <div class="container">
-                <div class="in">
-                    <div class="left">
-                        <div class="general willow">
-                            <span class="title">Visit us</span>
-                            <span class="line"></span>
-                            <ul>
-                                <li><i class="xcon-phone"></i><span>801-321-0310</span></li>
-                                <li><span>111 E Broadway (300 S), Suite 99<br />Salt Lake City, UT 84111</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="general">
-                            <span class="title">Send us a message</span>
-                            <span class="line"></span>
-                        </div>
-                        {% include contact.html %}
-                    </div>
-                </div>
+        <div class="macro_tm_about_me_wrap">
+            <div class="article-text">
+                <div class="subheading" id="labs">Labs</div>
+                <p>In keeping with MAST's forward-thinking mission, our labs will cover topics ranging from novel uses of free-to-use and open-source software for keeping production costs low, to guerilla production tactics for indie content creators, to business and brand-building essentials for artist entrepreneurs. Instructors will be subject matter experts, and wherever possible, prominent influencers and advocates for the technologies and methodologies they teach.</p>
+                <p>Labs are designed as an essential element of the MAST Fellowship, but are open to the public for a fee, both in-person or online.</p>
+                <p>Labs will begin in April 2019, and will be announced in February.</p>
+
+                <div class="subheading" id="fellowship">Fellowship</div>
+                <p>The MAST Fellowship is a curated program of labs, mentorships, pitch and networking events, production subsidizing, facility and equipment offerings, and sponsor matching.</p>
+                <p>Between 5 and 10 MAST Fellows will be selected by invitation, and from among the winners of the 2019 MAST contests, <em>People of Earth</em>, <em>Micro-docs</em>, and <em>Voices Seen</em>.</p>
             </div>
         </div>
     </div>
-    <!-- /CONTACT -->
+    <!-- /PROGRAM -->
+            
+    {% include contact.html %}
 </div>
 <!-- /CONTENT -->

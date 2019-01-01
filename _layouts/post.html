@@ -30,9 +30,15 @@ title: MAST by Salt Lake Film Society
                                         <span class="title_name accent">Posted By {{ page.author }} on {{ page.date | date_to_long_string }}</span>
                                     </div>
                                 </div>
-                                <div class="macro_tm_blog_definition_wrap article-text" markdown="1">
+                                <div class="macro_tm_blog_definition_wrap article-text anchor_nav" markdown="1">
                                     {{ content }}
                                 </div>
+                                {% if page.cognito_form %}
+                                    <div id="cognito" class="cognito">
+                                        <script src="https://services.cognitoforms.com/s/80W-TsSO5kKqQ99QmiagdQ"></script>
+                                        <script>Cognito.load("forms", { id: "{{ page.cognito_form }}" });</script>
+                                    </div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
