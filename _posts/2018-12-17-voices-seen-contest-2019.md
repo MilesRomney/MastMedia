@@ -21,11 +21,11 @@ Entrants may submit alone, or in groups, a short animated piece highlighting a d
 
 # Submissions
 
-Video: All submissions must be a video animated short piece between 1 and 30 minutes in length, and at least 1080p in resolution. It should depict a distinctive visual voice and style and an aptitude for visual storytelling, but it need not necessarily include spoken dialogue for sound effects—though at least a music soundtrack is encouraged. (Please indicate in your submission whether or not you have rights to any music used in your piece.) Submissions may have previously been published, so long as exclusive rights elsewhere no longer survive, and the piece is available for licensing to Salt Lake Film Society and MAST Either 3D or 2D are acceptable (or whatever amalgam you may have innovated). Computer animation, hand-drawn animation, and stop-motion animation are all acceptable.
+Video: All submissions must be a video animated short piece between 1 and 30 minutes in length, and at least 720p in resolution (though 1080p or higher is preferred). It should depict a distinctive visual voice and style and an aptitude for visual storytelling, but it need not necessarily include spoken dialogue or sound effects—though at least a music track is encouraged. (Please indicate in your submission whether or not you have rights to any music used in your piece.) Submissions may have previously been published, so long as exclusive rights elsewhere no longer survive, and the piece is available for licensing to Salt Lake Film Society and MAST. Either 3D or 2D is acceptable (or whatever amalgam you may have innovated). Computer animation, hand-drawn animation, and stop-motion animation are all acceptable.
 
 # Awards
 
-Grand prize winners: A group of 5 to 10 grand prize winners will be selected. Each group will produce a 1- to 2-minute short animated scene with budget provided by MAST, in a short animated film produced and directed by (to-be-announced) marquee talent for submission to the festival circuit. Winners will also receive complimentary enrollment (for up to 3 collaborators per winner) in all 2019 MAST labs, masterclasses, and networking events.
+Grand prize winners: A group of 5 to 10 grand prize winners will be selected. Each group will produce a 1- to 2-minute short animated scene with budget provided by MAST, in a short animated film produced and directed by (to-be-announced) marquee talent, for submission to the festival circuit. Winners will also receive complimentary enrollment (for up to 3 collaborators per winner) in all 2019 MAST labs, masterclasses, and networking events.
 
 Honorable mentions: Multiple honorable mentions may be selected. A cash award of $200 will be given to each.
 
