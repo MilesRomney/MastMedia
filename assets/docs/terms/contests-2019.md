@@ -9,3 +9,5 @@
 7. If the Contest results in your being awarded a production budget, you understand that further participation will require your agreement to additional terms which will grant SLFS, MAST, and its affiliates unlimited license to publish in full, distribute, re-license, submit to festivals, combine, reference, and promote the resulting work in perpetuity, though it is contemplated that such a license shall be exclusive only for a period of 1 year.
 8. This agreement is made within the jurisdiction of the State of Utah.
 9. Should any dispute arise from your submission to or participation in the Contest, you agree to seek resolution of the dispute exclusively by binding arbitration.
+
+v20190101
