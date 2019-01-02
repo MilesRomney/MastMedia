@@ -7,7 +7,7 @@ categories: [contests]
 author: "Miles Romney"
 color_scheme: "snow"
 preview_image: "/assets/img/posts/micro-docs.jpg"
-banner_image: "/assets/img/posts/micro-docs.jpg"
+banner_image: "/assets/img/posts/micro-docs-banner.jpg"
 cognito_form: 2
 ---
 
