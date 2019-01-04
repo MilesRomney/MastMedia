@@ -11,6 +11,7 @@ $(function() {
     mast_cycle_statements();
     mast_init_discord();
     mast_prep_cognito();
+    mast_prep_vimeo(true);
 });
 
 function mast_init_youtube(which) {
@@ -126,4 +127,18 @@ function mast_prep_mobile_menu() {
 
 function mast_prep_cognito() {
     $('.cognito').addClass('active').children('[data-field=ContestAndLicensingTerms] textarea').first().attr('disabled', 'disabled');
+}
+
+function mast_prep_vimeo(set_on_resize) {
+    var ratio = $('iframe.vimeo').attr('height') / $('iframe.vimeo').attr('width');
+    var width = $('iframe.vimeo').parent().width();
+    var height = width * ratio;
+
+    $('iframe.vimeo').attr('width', width).attr('height', height);
+
+    if(set_on_resize) {
+        $(window).resize(function() {
+            mast_prep_vimeo(false);
+        });
+    }
 }

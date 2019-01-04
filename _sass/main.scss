@@ -333,6 +333,10 @@ $scheme-snow-text-color: $black;
 /*---------------------------------------------------*/
 /*	ELEMENTS
 /*---------------------------------------------------*/
+iframe.vimeo {
+    margin: 0 auto;
+}
+
 a.button {
     @include button($accent-color, $white);
 
