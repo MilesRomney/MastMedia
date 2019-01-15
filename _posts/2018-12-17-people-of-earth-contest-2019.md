@@ -25,9 +25,9 @@ Entrants are encouraged to collaborate in pairs, and should submit an original p
 
 Photograph: The photograph may be color or black-and-white, and should be at least 4k resolution. It must depict one person, or multiple people, and must be accompanied by signed releases (available here) from the photographed subjects.
 
-Character profile: Character profiles in prose must be between 2,500 words and 10,000 words in length. Profiles in poetry may be any length. There is no required format, style, content rating, or audience.
+Character profile or character-centered short story: in prose must be between 2,500 words and 10,000 words in length; in poetry may be any length. There is no required format, style, content rating, audience, or genre—it's an open field!
 
-All submissions must include both a photograph and a character profile. The photographer and writer need not be the same person—collaboration is encouraged. Award money will be split equally amongst all collaborators on all winning entries.
+All submissions must include both a photograph and a character profile/story. The photographer and writer may be the same person, but need not be—collaboration is encouraged. Award money will be split equally amongst all collaborators on all winning entries.
 
 # Awards
 
