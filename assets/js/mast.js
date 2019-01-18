@@ -12,6 +12,7 @@ $(function() {
     mast_init_discord();
     mast_prep_cognito();
     mast_prep_vimeo(true);
+    mast_prompt_vote('labtopicspoll');
 });
 
 function mast_init_youtube(which) {
@@ -140,5 +141,24 @@ function mast_prep_vimeo(set_on_resize) {
         $(window).resize(function() {
             mast_prep_vimeo(false);
         });
+    }
+}
+
+function mast_prompt_vote(cookie) {
+    var vote = $('.vote');
+
+    if(document.cookie.indexOf(cookie) < 0) {
+        setTimeout(function() {
+            vote.addClass('active').find('.yes').click(function() {
+                document.location.href = '#poll';
+                document.cookie = cookie + '=true';
+                vote.removeClass('active');
+            });
+
+            vote.find('.no').click(function() {
+                document.cookie = cookie + '=true';
+                vote.removeClass('active');
+            });
+        }, 1500);
     }
 }

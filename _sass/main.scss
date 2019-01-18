@@ -215,7 +215,64 @@ $scheme-snow-text-color: $black;
             background: url(https://s3.amazonaws.com/sporklabs/MastStudio/img/snakes_by_jake_wyatt.jpg) no-repeat;
         }
 
+        .vote {
+            z-index: 210;
+            width: 600px;
+            background: $scheme-navy-color;
+            border-radius: 3px;
+            color: $scheme-navy-accent-color;
+            font-family: $font-family;
+            font-size: 45px;
+            font-weight: 700;
+            text-align: center;
+            position: absolute;
+            overflow: hidden;
+            left: calc(50% - 300px);
+            top: calc(50% - 200px);
+            opacity: 0;
+            transform: scale(0.8);
+
+            @include ease(.2s);
+
+            @media (max-width: $mobile-width) {
+                width: 90%;
+                left: 5%;
+                font-size: 25px;
+            }
+
+            &.active {
+                top: calc(50% - 100px);
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            &.scroll {
+                opacity: 0;
+            }
+
+            .buttons {
+                > div {
+                    width: calc(50% - 20px);
+                    cursor: pointer;
+                    font-size: 0.75em;
+                    text-transform: uppercase;
+                    padding: 10px;
+
+                    &.yes {
+                        background: $white;
+                        color: $black;
+                    }
+    
+                    &.no {
+                        background: $black;
+                        color: $white;
+                    }    
+                }
+            }
+        }
+
         .statement {
+            z-index: 200;
             position: relative;
             top: 22%;
             left: 10%;
@@ -279,6 +336,24 @@ $scheme-snow-text-color: $black;
             }
         }
     }
+
+    .cognito.poll {
+        width: 100%;
+
+        .c-forms-form {
+            background: none;
+
+            .c-forms-form-title {
+                display: none;
+            }
+
+            .c-choice-option {
+                display: block;
+                clear: left;
+                text-align: left;
+            }
+        }
+    }
 }
 
 
@@ -333,10 +408,6 @@ $scheme-snow-text-color: $black;
 /*---------------------------------------------------*/
 /*	ELEMENTS
 /*---------------------------------------------------*/
-iframe.vimeo {
-    margin: 0 auto;
-}
-
 a.button {
     @include button($accent-color, $white);
 
@@ -358,7 +429,11 @@ a.button {
             -moz-transform: rotate(-3deg);
 
             .smile {
-                &::after { 
+                font-weight: normal;
+                font-size: 0.5em;
+
+                &::after {
+                    font-weight: normal;
                     content: "( ͡° ͜ʖ ͡° )";
                 }
             }

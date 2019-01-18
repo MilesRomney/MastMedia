@@ -1,1 +1,8 @@
-
+title: MAST Media Accelerator Studio by Salt Lake Film Society
+description: "We build artists into artist entrepreneurs in Salt Lake City. We focus on tech-enabled storytelling including animation, economical filmmaking, game design, and offer labs and fellowships in Salt Lake City and online."
+url: https://www.maststudio.org
+author: MakeItMastly
+twitter:
+  username: makeitmastly
+plugins:
+  - jekyll-seo-tag
