@@ -40,3 +40,11 @@ Awards will be announced in March.
 # Deadline
 
 All submissions must be received before <strike>noon MST on 15 February, 2019</strike>. <strong>By popular demand following Sundance, the deadline has been extended to noon MST on 1 March, 2019.</strong>
+
+# Available Portraits
+
+The following portraits have been submitted by photographers looking to pair with a writer. If you're a writer, and would like to use one of these photos as the inspiration for your work, please note the photographer's name and <a href="/#contact">contact us</a>.
+
+If you're a photographer and would like to submit photos for posting here, <a href="/#contact">contact us</a>!
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrMIzYhxXZrmWDmj?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
