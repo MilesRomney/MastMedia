@@ -35,8 +35,8 @@ Grand prize winner: A single grand prize winner will be selected. A cash award o
 
 Honorable mentions: Multiple honorable mentions may be selected. A cash award of $200 will be given to each (divided between writer and photographer).
 
-Awards will be announced on 4 March.
+Awards will be announced in March.
 
 # Deadline
 
-All submissions must be received before noon MST on 15 February, 2019.
+All submissions must be received before <strike>noon MST on 15 February, 2019</strike>. <strong>By popular demand following Sundance, the deadline has been extended to noon MST on 1 March, 2019.</strong>
