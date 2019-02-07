@@ -1,22 +1,22 @@
 ---
 layout: default
-title: MAST Contests
-google_font: Pacifico
+title: MAST Nods
+google_font: Abril+Fatface
 ---
 <!-- CONTENT -->
 <div class="macro_tm_content" id="home">
 
     <!-- FEATURED -->
-    <div class="macro_tm_section color-scheme plum padded-bottom" id="contests">
+    <div class="macro_tm_section color-scheme snow padded-bottom" id="nods">
         <div class="macro_tm_blog_wrap">
             <div class="macro_tm_title_holder underlying-header heading">
-                Contests
+                MAST Nods
             </div>
             <div class="macro_tm_list_wrap section_blog" data-column="3" data-space="20">
                 <div class="container">
                     <ul class="macro_list another_animation">
                         {% for post in site.posts %}
-                          {% if post.categories contains "contests" %}
+                          {% if post.categories contains "nods" %}
                             <li class="list_li hideforanimation">
                                 <div class="list_in">
                                     <a href="{{ post.url }}}}"><img class="image" src="{{ post.preview_image }}" alt="" /></a>
@@ -25,6 +25,13 @@ google_font: Pacifico
                                         <p class="date accent">{{ post.date | date_to_long_string }}</p>
                                         <span class="title_item"><a href="{{ post.url }}">{{ post.title }}</a></span>
                                         <p class="description_blog">{{ post.description }}</p>
+                                    </div>
+                                    <div class="category_blog">
+                                        {% for category in post.categories %}
+                                          {% unless category == "nods" %}
+                                            <span class="accent-bg">{{ category }}</span>
+                                          {% endunless %}
+                                        {% endfor %}
                                     </div>
                                 </div>
                             </li>
