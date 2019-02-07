@@ -23,7 +23,7 @@ Entrants are encouraged to collaborate in pairs, and should submit an original p
 
 # Submissions
 
-Photograph: The photograph may be color or black-and-white, and should be at least 4k resolution. It must depict one person, or multiple people, and must be accompanied by signed releases (available here) from the photographed subjects.
+Photograph: The photograph may be color or black-and-white, and should be at least 4k resolution. It must depict one person, or multiple people. Please be sure to get any needed <a href="https://www.ppa.com/assets/documents/modelreleasewhitepaper.pdf" target="_NEW">model releases</a> from the photographed subjects to keep in your records.
 
 Character profile or character-centered short story: in prose must be between 2,500 words and 10,000 words in length; in poetry may be any length. There is no required format, style, content rating, audience, or genre—it's an open field!
 
