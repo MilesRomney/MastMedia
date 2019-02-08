@@ -23,7 +23,7 @@ Entrants are encouraged to collaborate in pairs, and should submit an original p
 
 # Submissions
 
-Photograph: The photograph may be color or black-and-white, and should be at least 4k resolution. It must depict one person, or multiple people, and must be accompanied by signed releases (available here) from the photographed subjects.
+Photograph: The photograph may be color or black-and-white, and should be at least 4k resolution. It must depict one person, or multiple people. Please be sure to get any needed <a href="https://www.ppa.com/assets/documents/modelreleasewhitepaper.pdf" target="_NEW">model releases</a> from the photographed subjects to keep in your records.
 
 Character profile or character-centered short story: in prose must be between 2,500 words and 10,000 words in length; in poetry may be any length. There is no required format, style, content rating, audience, or genre—it's an open field!
 
@@ -40,3 +40,11 @@ Awards will be announced in March.
 # Deadline
 
 All submissions must be received before <strike>noon MST on 15 February, 2019</strike>. <strong>By popular demand following Sundance, the deadline has been extended to noon MST on 1 March, 2019.</strong>
+
+# Available Portraits
+
+The following portraits have been submitted by photographers looking to pair with a writer. If you're a writer, and would like to use one of these photos as the inspiration for your work, please note the photographer's name and <a href="/#contact">contact us</a>.
+
+If you're a photographer and would like to submit photos for posting here, <a href="/#contact">contact us</a>!
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrMIzYhxXZrmWDmj?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
