@@ -68,6 +68,14 @@ function mast_init_youtube(which) {
             title: "CALDERA",
             attribution: "Evan Viera",
             zoom: 1.4
+        },
+        {
+            id: "VBps1IvCyj0",
+            start: 60,
+            duration: 180,
+            title: "Lost and Found",
+            attribution: "Andrew Goldsmith & Bradley Slabe",
+            zoom: 1.2
         }
     ];
     which = which || (Math.floor(Math.random() * videos.length));
