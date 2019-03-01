@@ -39,7 +39,7 @@ Awards will be announced in March.
 
 # Deadline
 
-All submissions must be received before <strike>noon MST on 15 February, 2019</strike>. <strong>By popular demand following Sundance, the deadline has been extended to noon MST on 1 March, 2019.</strong>
+All submissions must be received before <strike>noon MST on 15 February, 2019</strike>. <strong>By popular demand following Sundance, the deadline has been extended to noon MST on 1 March, 2019. <strong>The deadline has passed, but we are currently accepting late submissions.</strong>
 
 # Available Portraits
 
