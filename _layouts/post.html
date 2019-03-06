@@ -41,7 +41,11 @@ title: MAST by Salt Lake Film Society
                                 {% endif %}
 
                                 {% if page.vimeo %}
-                                    <iframe class="vimeo" src="https://player.vimeo.com/video/{{ page.vimeo }}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    <iframe class="video vimeo" src="https://player.vimeo.com/video/{{ page.vimeo }}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                {% endif %}
+
+                                {% if page.youtube %}
+                                    <iframe class="video youtube" src="https://www.youtube.com/embed/{{ page.youtube }}" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                
                                 {% endif %}
                             </div>
                         </div>
