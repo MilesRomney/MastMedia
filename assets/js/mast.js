@@ -139,7 +139,7 @@ function mast_prep_cognito() {
 }
 
 function mast_prep_video(set_on_resize) {
-    var ratio = $('iframe.video').attr('height') / $('iframe.vimeo').attr('width');
+    var ratio = $('iframe.video').attr('height') / $('iframe.video').attr('width');
     var width = $('iframe.video').parent().width();
     var height = width * ratio;
 
