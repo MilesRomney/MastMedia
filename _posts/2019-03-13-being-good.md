@@ -2,7 +2,7 @@
 layout: post
 title: "Being Good"
 subtitle: "A MAST nod"
-description: "A MAST nod to Jenny Harder's creative animated short, _Being Good_."
+description: "A MAST nod to Jenny Harder's creative animated short, Being Good."
 categories: [micro-docs, nods]
 author: "Miles Romney"
 color_scheme: "snow"

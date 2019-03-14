@@ -17,7 +17,7 @@ google_font: Abril+Fatface
                     <ul class="macro_list another_animation">
                         {% for post in site.posts %}
                           {% if post.categories contains "nods" %}
-                            <li class="list_li hideforanimation">
+                            <li class="list_li hideforanimation" date="{{ post.date }}">
                                 <div class="list_in">
                                     <a href="{{ post.url }}}}"><img class="image" src="{{ post.preview_image }}" alt="" /></a>
                                     <a href="{{ post.url }}"><div class="overlay_blog"></div></a>
