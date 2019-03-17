@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: watch
 title: "Being Good"
 subtitle: "A MAST nod"
 description: "A MAST nod to Jenny Harder's creative animated short, Being Good."

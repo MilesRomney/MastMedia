@@ -1093,3 +1093,157 @@ a.button {
         }
     }
 }
+
+/*---------------------------------------------------*/
+/*	WATCH
+/*---------------------------------------------------*/
+body {
+    &.watch {
+        background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23111111' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%231c1c1c' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23262626' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23313131' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%233c3c3c' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        /* https://www.svgbackgrounds.com */
+
+        &.subtle {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23050505' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23090909' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%230d0d0d' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23111111' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23141414' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    
+            .watch_content {
+                .watch_header, .watch_info {
+                    opacity: 0.1;
+                }
+        
+                .home {
+                    .title {
+                        right: 60px;
+                    }
+
+                    img {
+                        width: 56px !important;
+                        top: -7px !important;
+                    }
+                }
+
+                .player {
+                    border-radius: 0;
+                }
+            }
+        }    
+    }
+}
+
+.watch_content {
+    position: absolute;
+    width: 100%;
+    color: white;
+
+    @include ease(1s);
+
+    .watch_header {
+        @include ease();
+
+        .back {
+            display: block;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            float: left;
+            padding: 10px;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }    
+        }
+
+        .home {
+            display: block;
+            float: right;
+            position: absolute;
+            right: 5px;
+            
+            @media (max-width: $mobile-width) {
+                position: relative;                    
+            }
+
+            .title {
+                position: absolute;
+                right: 85px;
+                top: -2px;
+                font-size: 20px;
+                text-transform: lowercase;
+                text-align: right;
+
+                @include ease(.8s);
+
+                .small {
+                    font-size: 13px;
+                }
+
+                .screenings {
+                    position: relative;
+                    top: -10px;
+                }
+            }
+
+            img {
+                width: 80px;
+                position: relative;
+                top: -12px;
+
+                @include ease(.8s);
+            }
+        }
+    }
+
+    .player {
+        position: relative;
+        width: 100%;
+        min-height: 480px;
+        transform: scale(0.95);
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+        border-radius: 10px;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
+        box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
+        background: black;
+
+        @include ease();
+
+        @media (max-width: $mobile-width) {
+            min-height: 200px;
+        }
+
+        &.playing {
+            transform: none;
+        }
+    }
+
+    .watch_info {
+        position: relative;
+        top: -300px;
+        width: 80%;
+        float: right;
+        padding: 340px 20px 20px;
+        margin: 0 0 20px;
+        border-bottom-left-radius: 10px;
+        z-index: 1;
+        line-height: 22px;
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+68&0+0,0.65+68 */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 68%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 68%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+        @include ease();
+
+        @media (max-width: $mobile-width) {
+            padding: 100px 20px 20px;
+            top: -80px;                    
+        }
+    }
+}

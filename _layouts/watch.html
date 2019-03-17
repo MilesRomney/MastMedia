@@ -1,0 +1,35 @@
+---
+layout: basic
+title: MAST by Salt Lake Film Society
+---
+<!-- CONTENT -->
+<div class="watch_content">
+    <div class="watch_header">
+        <a class="back" href="javascript:window.history.back();">
+            <img src="/assets/img/svg/back.svg" />
+        </a>
+        <a class="home" href="/">
+            <div class="title">
+                <span class="small">small</span>
+                <span class="screenings">screenings</span>
+            </div>
+            <img src="/assets/img/branding/mast-white-small.png" />
+        </a>
+    </div>
+    {% if page.vimeo %}
+        <div class="player">
+            <div id="{{ page.vimeo }}" class="video vimeo"></div>
+        </div>
+    {% endif %}
+
+    {% if page.youtube %}
+        <div class="player">
+            <div id="{{ page.youtube }}" class="video youtube"></div>
+        </div>
+    {% endif %}
+
+    <div class="watch_info">
+        {{ content }}
+    </div>
+</div>
+<!-- /CONTENT -->

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: watch
 title: "Lost and Found"
 subtitle: "A MAST nod"
 description: "A MAST nod to Andrew Goldsmith's & Bradley Slabe's beautifully animated short, Lost and Found"
