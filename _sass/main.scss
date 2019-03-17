@@ -426,6 +426,10 @@ $scheme-snow-text-color: $black;
 /*---------------------------------------------------*/
 /*	ELEMENTS
 /*---------------------------------------------------*/
+.embargoed {
+    display: none;
+}
+
 a.button {
     @include button($accent-color, $white);
 
