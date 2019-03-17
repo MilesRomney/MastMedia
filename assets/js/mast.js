@@ -2,18 +2,18 @@ $(function () {
     // Desktop only
     if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         mast_init_youtube();
-        // Mobile only
+    // Mobile only
     } else {
         mast_prep_mobile_menu();
     }
 
     // Universal
+    mast_lift_embargoes();
     mast_cycle_statements();
     mast_init_discord();
     mast_prep_cognito();
     mast_render_video();
     mast_prompt_vote('labtopicspoll');
-    mast_lift_embargoes();
 });
 
 function mast_init_youtube(which) {
@@ -285,7 +285,7 @@ function mast_prompt_vote(cookie) {
 function mast_lift_embargoes() {
     $('.embargoed').each(
         function (k, v) {
-            date = new Date($(v).attr('date'));
+            date = new Date($(v).attr('date')).getTime();
             if (date < Date.now()) {
                 $(v).removeClass('embargoed');
             }

@@ -6,3 +6,4 @@ twitter:
   username: makeitmastly
 plugins:
   - jekyll-seo-tag
+timezone: America/Denver
