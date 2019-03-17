@@ -12,7 +12,6 @@ $(function () {
     mast_init_discord();
     mast_prep_cognito();
     mast_render_video();
-    /*mast_prep_video(true);*/
     mast_prompt_vote('labtopicspoll');
     mast_lift_embargoes();
 });
