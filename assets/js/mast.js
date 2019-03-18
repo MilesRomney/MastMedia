@@ -295,35 +295,37 @@ function mast_lift_embargoes() {
 }
 
 function mast_prep_playlist_carousel() {
-    var carusel = $('.playlist.owl-carousel');
-    carusel.owlCarousel({
-        loop:true,
-        items: 5,
-        lazyLoad: true,
-        margin: 5,
-        autoplay: false,
-        smartSpeed: 1000,
-        dots: false,
-        nav: false,
-        navSpeed: false,
-        responsive: {
-            0:      { items: 2 },
-            500:    { items: 5 },
-            1600:   { items: 6 },
-            2000:   { items: 8 }
-        }
-    });
-    
-    var	prev		= jQuery('.carousel_nav a.prev');
-    var	next		= jQuery('.carousel_nav a.next');
-    
-    prev.on('click',function(){
-        carusel.trigger('prev.owl.carousel');
-        return false;
-    });
-    next.on('click',function(){
-        carusel.trigger('next.owl.carousel');
-        return false;
+    $('.playlist.owl-carousel').each(function(k, v){
+        var carousel = $(v);
+        carousel.owlCarousel({
+            loop: true,
+            items: 5,
+            lazyLoad: true,
+            margin: 5,
+            autoplay: carousel.attr('autoplay') == 'autoplay' ? true : false,
+            smartSpeed: 1000,
+            dots: false,
+            nav: false,
+            navSpeed: false,
+            responsive: {
+                0:      { items: 2 },
+                500:    { items: 5 },
+                1600:   { items: 6 },
+                2000:   { items: 8 }
+            }
+        });
+        
+        var	prev		= $('.carousel_nav a.prev');
+        var	next		= $('.carousel_nav a.next');
+        
+        prev.on('click',function(){
+            carousel.trigger('prev.owl.carousel');
+            return false;
+        });
+        next.on('click',function(){
+            carousel.trigger('next.owl.carousel');
+            return false;
+        });
     });
 }
 
