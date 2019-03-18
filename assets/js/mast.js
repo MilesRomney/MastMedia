@@ -14,6 +14,7 @@ $(function () {
     mast_prep_cognito();
     mast_render_video();
     mast_prompt_vote('labtopicspoll');
+    mast_prep_playlist_carousel();
 });
 
 function mast_init_youtube(which) {
@@ -292,3 +293,54 @@ function mast_lift_embargoes() {
         }
     );
 }
+
+function mast_prep_playlist_carousel() {
+    var carusel = $('.playlist.owl-carousel');
+    carusel.owlCarousel({
+        loop:true,
+        items: 5,
+        lazyLoad: true,
+        margin: 5,
+        autoplay: false,
+        smartSpeed: 1000,
+        dots: false,
+        nav: false,
+        navSpeed: false,
+        responsive: {
+            0:      { items: 2 },
+            500:    { items: 5 },
+            1600:   { items: 6 },
+            2000:   { items: 8 }
+        }
+    });
+    
+    var	prev		= jQuery('.carousel_nav a.prev');
+    var	next		= jQuery('.carousel_nav a.next');
+    
+    prev.on('click',function(){
+        carusel.trigger('prev.owl.carousel');
+        return false;
+    });
+    next.on('click',function(){
+        carusel.trigger('next.owl.carousel');
+        return false;
+    });
+}
+
+$.fn.shuffle = function() {
+    var allElems = this.get(),
+        getRandom = function(max) {
+            return Math.floor(Math.random() * max);
+        },
+        shuffled = $.map(allElems, function(){
+            var random = getRandom(allElems.length),
+                randEl = $(allElems[random]).clone(true)[0];
+            allElems.splice(random, 1);
+            return randEl;
+        });
+    this.each(function(i){
+        $(this).replaceWith($(shuffled[i]));
+    });
+    return $(shuffled);
+};
+$('.randomize').shuffle();

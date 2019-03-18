@@ -3,7 +3,7 @@ layout: watch
 title: "The Dream Machine"
 subtitle: "A MAST nod"
 description: "A MAST nod to Cockroach Inc.'s creatively developed game, The Dream Machine."
-categories: [micro-docs, nods]
+categories: [games, nods]
 author: "Miles Romney"
 color_scheme: "snow"
 preview_image: "/assets/img/posts/dream-machine.jpg"

@@ -3,7 +3,7 @@ layout: watch
 title: "The Echo of Time"
 subtitle: "A MAST nod"
 description: "A MAST nod to Mahmood Atashi's touching animated short, The Echo of Time."
-categories: [micro-docs, nods]
+categories: [animations, nods]
 author: "Miles Romney"
 color_scheme: "snow"
 preview_image: "/assets/img/posts/echo-of-time.jpg"

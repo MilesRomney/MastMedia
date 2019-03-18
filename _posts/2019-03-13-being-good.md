@@ -3,7 +3,7 @@ layout: watch
 title: "Being Good"
 subtitle: "A MAST nod"
 description: "A MAST nod to Jenny Harder's creative animated short, Being Good."
-categories: [micro-docs, nods]
+categories: [animations, nods]
 author: "Miles Romney"
 color_scheme: "snow"
 preview_image: "/assets/img/posts/being-good.jpg"

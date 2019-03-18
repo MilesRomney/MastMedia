@@ -1143,6 +1143,10 @@ body {
 
     @include ease(1s);
 
+    @media (max-width: $mobile-width) {
+        height: 100vmax;
+    }
+
     .watch_header {
         @include ease();
 
@@ -1172,13 +1176,13 @@ body {
 
             .title {
                 position: absolute;
-                right: 85px;
+                right: 92px;
                 top: -2px;
                 font-size: 20px;
                 text-transform: lowercase;
                 text-align: right;
 
-                @include ease(.8s);
+                @include ease();
 
                 .small {
                     font-size: 13px;
@@ -1191,11 +1195,11 @@ body {
             }
 
             img {
-                width: 80px;
+                width: 87px;
                 position: relative;
-                top: -12px;
+                top: -13px;
 
-                @include ease(.8s);
+                @include ease();
             }
         }
     }
@@ -1248,6 +1252,72 @@ body {
         @media (max-width: $mobile-width) {
             padding: 100px 20px 20px;
             top: -80px;                    
+        }
+    }
+
+    .watch_playlist {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        transform: scale(0.97);
+
+        .playlist {
+            .playlist_item {
+                border-radius: 10px;
+                overflow: hidden;        
+            }
+        }
+    }
+}
+
+.playlist {
+    z-index: 1;
+
+    .owl-stage-outer {
+    }
+
+    .playlist_item {
+        position: relative;
+        list-style-type: none;
+        transform: scale(0.95);
+
+        @include ease(.2s);
+        
+        &:hover {
+            transform: scale(1);
+        }
+
+        .playlist_item_title {
+            position: absolute;
+            bottom: 0;
+            z-index: 5;
+            width: 100%;
+            padding: 20px;
+            background: rgba($black, 0.8);
+            font-family: $font-family;
+            color: white;
+            font-weight: 600;
+            @include text-outline($black, 0, 2px);
+        }
+
+        .playlist_item_categories {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 5;
+            width: 100%;
+            font-family: $font-family;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 700;
+
+            .category {
+                color: $white;
+                background: $scheme-plum-accent-color;
+                float: right;
+                padding: 5px 10px;
+                margin-left: 2px;
+            }
         }
     }
 }

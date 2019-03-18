@@ -31,5 +31,29 @@ title: MAST by Salt Lake Film Society
     <div class="watch_info">
         {{ content }}
     </div>
+
+    <div class="watch_playlist">
+        <ul class="playlist owl-carousel">
+            {% for post in site.posts %}
+                {% if post.layout contains "watch" %}
+                    <li class="playlist_item randomize embargoed" date="{{ post.date | date_to_xmlschema }}">
+                        <a href="{{ post.url }}">
+                            <div class="playlist_item_content">
+                                <img class="playlist_item_image" src="{{ post.preview_image }}" alt="" />
+                                <div class="playlist_item_categories">
+                                    {% for category in post.categories %}
+                                        {% unless category == "nods" %}
+                                        <span class="category">{{ category }}</span>
+                                        {% endunless %}
+                                    {% endfor %}
+                                </div>
+                                <div class="playlist_item_title">{{ post.title }}</div>
+                            <div>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 <!-- /CONTENT -->
