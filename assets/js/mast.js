@@ -13,6 +13,7 @@ $(function() {
     mast_prep_cognito();
     mast_prep_video(true);
     mast_prompt_vote('labtopicspoll');
+    mast_lift_embargoes();
 });
 
 function mast_init_youtube(which) {
@@ -169,4 +170,20 @@ function mast_prompt_vote(cookie) {
             });
         }, 1500);
     }
+}
+
+/* 
+    Yes yes, we're full aware that a savy viewer might see content embargoed in this way. 
+    These are informal embargoes, not sensitive. We're unconcerned. And usually, we'll be 
+    relying on Jekyll's in-built embargo system anyway.
+*/
+function mast_lift_embargoes() {
+    $('.embargoed').each(
+        function(k, v) {
+            date = new Date($(v).attr('date'));
+            if(date < Date.now()) {
+                $(v).removeClass('embargoed');
+            }
+        }
+    );
 }
