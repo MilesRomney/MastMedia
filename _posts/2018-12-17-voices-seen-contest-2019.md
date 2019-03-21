@@ -11,8 +11,6 @@ banner_image: "/assets/img/posts/voices-seen.jpg"
 cognito_form: 3
 ---
 
-<a class="button" href="#cognito"><span class="xcon-forward"></span> Submit now!</a>
-
 We are, all of us, defined by our stories. They are the stuff of our empathy, our hope, our ambitions. Our evolution. They give us our consciousness, our soul. We tell these stories. And some few of us can show them, invent them visually through art and motion—these are the voices seen.
 
 Salt Lake Film Society’s MAST announces its 2019 animation contest, Voices Seen.

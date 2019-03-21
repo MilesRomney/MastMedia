@@ -10,8 +10,6 @@ preview_image: "/assets/img/posts/people-of-earth.jpg"
 banner_image: "/assets/img/posts/people-of-earth.jpg"
 ---
 
-<a class="button" href="#cognito"><span class="xcon-forward"></span> Submit now!</a>
-
 We are, all of us, defined by our stories. They are the stuff of our empathy, our hope, our ambitions. Our evolution. Stories give us our consciousness, our humanity.
 
 We are the people of Earth.

@@ -10,8 +10,6 @@ preview_image: "/assets/img/posts/micro-docs.jpg"
 banner_image: "/assets/img/posts/micro-docs-banner.jpg"
 ---
 
-<a class="button" href="#cognito"><span class="xcon-forward"></span> Submit now!</a>
-
 We are, all of us, defined by our stories. There are nearly 8 billion of them unfolding every day: people, lives lived. Knowing these stories is the stuff of our empathy, our hope, our ambitions. Our evolution. They give us all our consciousness, our soul. And we few are the ones who tell these stories.
 
 Salt Lake Film Society’s MASt! announces its 2019 documentary contest, Micro-docs.
