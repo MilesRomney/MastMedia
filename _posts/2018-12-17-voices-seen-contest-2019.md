@@ -8,7 +8,6 @@ author: "Miles Romney"
 color_scheme: "snow"
 preview_image: "/assets/img/posts/voices-seen.jpg"
 banner_image: "/assets/img/posts/voices-seen.jpg"
-cognito_form: 3
 ---
 
 We are, all of us, defined by our stories. They are the stuff of our empathy, our hope, our ambitions. Our evolution. They give us our consciousness, our soul. We tell these stories. And some few of us can show them, invent them visually through art and motion—these are the voices seen.
