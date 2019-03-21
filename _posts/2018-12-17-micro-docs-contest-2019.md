@@ -8,7 +8,6 @@ author: "Miles Romney"
 color_scheme: "snow"
 preview_image: "/assets/img/posts/micro-docs.jpg"
 banner_image: "/assets/img/posts/micro-docs-banner.jpg"
-cognito_form: 2
 ---
 
 <a class="button" href="#cognito"><span class="xcon-forward"></span> Submit now!</a>
@@ -29,8 +28,8 @@ Grand prize winner: A single grand prize winner will be selected. A cash award o
 
 Honorable mentions: Multiple honorable mentions may be selected. A cash award of $200 will be given to each (divided among the group).
 
-Awards will be announced in March.
+Awards will be announced on March 31st.
 
 # Deadline
 
-All submissions must be received before <strike>noon MST on 15 February, 2019</strike>. <strong>By popular demand following Sundance, the deadline has been extended to noon MST on 1 March, 2019. <strong>The deadline has passed, but we are currently accepting late submissions.</strong>
+All submissions must be received before <strike>noon MST on 15 February, 2019</strike>. <strong>By popular demand following Sundance, the deadline has been extended to noon MST on 1 March, 2019. <strong>The deadline has now passed, and no further submissions are being accepted. Thanks to all those who participated!</strong>

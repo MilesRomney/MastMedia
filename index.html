@@ -39,7 +39,7 @@ title: MAST by Salt Lake Film Society
         <ul class="playlist owl-carousel" autoplay="autoplay">
             {% for post in site.posts %}
                 {% if post.layout contains "watch" %}
-                    <li class="playlist_item randomize embargoed" date="{{ post.date | date_to_xmlschema }}">
+                    <li class="playlist_item embargoed" date="{{ post.date | date_to_xmlschema }}">
                         <a href="{{ post.url }}">
                             <div class="playlist_item_content">
                                 <img class="playlist_item_image" src="{{ post.preview_image }}" alt="" />

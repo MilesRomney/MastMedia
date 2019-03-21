@@ -29,8 +29,8 @@ Grand prize winners: A group of 5 to 10 grand prize winners will be selected. Ea
 
 Honorable mentions: Multiple honorable mentions may be selected. A cash award of $200 will be given to each.
 
-Awards will be announced in March.
+Awards will be announced on March 31st.
 
 # Deadline
 
-All submissions must be received before <strike>noon MST on 15 February, 2019</strike>. By popular demand following Sundance, the deadline has been extended to noon MST on 1 March, 2019. <strong>The deadline has passed, but we are currently accepting late submissions.</strong>
+All submissions must be received before <strike>noon MST on 15 February, 2019</strike>. <strong>By popular demand following Sundance, the deadline has been extended to noon MST on 1 March, 2019. <strong>The deadline has now passed, and no further submissions are being accepted. Thanks to all those who participated!</strong>
