@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: watch
 title: "The Legend of the Crabe Phare"
 subtitle: "A MAST nod"
 description: "A MAST nod to Supinfocom Valenciennes's creatively animated CGI short, _The Legend of the Crabe Phare_."

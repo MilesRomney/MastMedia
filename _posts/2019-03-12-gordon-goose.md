@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: watch
 title: "Gordon Goose"
 subtitle: "A MAST nod"
 description: "A MAST nod to panoptiqm's hilariously creative animated short, _Gordon Goose_"

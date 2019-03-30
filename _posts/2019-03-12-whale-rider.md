@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: watch
 title: "Whale Rider"
 subtitle: "A MAST nod"
 description: "A MAST nod to Bondok Max's beautifully animated short, _Whale Rider_"
