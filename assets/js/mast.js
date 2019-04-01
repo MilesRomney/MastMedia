@@ -43,7 +43,7 @@ function mast_init_youtube(which) {
             zoom: 1.4
         },
         {
-            id: "eKGkxIuesTI",
+            id: "uawLHDmu9C4",
             start: 10,
             duration: 47,
             title: "Community Patrol",
