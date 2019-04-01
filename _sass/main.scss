@@ -150,6 +150,28 @@ $scheme-snow-text-color: $black;
 /*	HOME
 /*---------------------------------------------------*/
 #home {
+    .countdown-clock-container {
+        position: absolute;
+        top: 200px;
+        left: 50px;
+
+        @media (max-width: $mobile-width) {
+            transform: scale(0.5);
+            left: -18vh;
+            width: 75vh;
+            top: 300px;
+        }
+
+        .flip-clock-label {
+            color: white !important;
+        }
+
+        .label {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
     #youtube {
         position: absolute;
         width: 100%;
