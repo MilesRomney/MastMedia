@@ -40,27 +40,80 @@ title: MAST by Salt Lake Film Society
             </div>
             <img src="/assets/img/branding/mast-white-small.png" />
         </div>
-        <ul class="playlist owl-carousel" autoplay="autoplay">
-            {% for post in site.posts %}
-                {% if post.layout contains "watch" %}
-                    <li class="playlist_item embargoed" date="{{ post.date | date_to_xmlschema }}">
-                        <a href="{{ post.url }}">
-                            <div class="playlist_item_content">
-                                <img class="playlist_item_image" src="{{ post.preview_image }}" alt="" />
-                                <div class="playlist_item_categories">
-                                    {% for category in post.categories %}
-                                        {% unless category == "nods" %}
-                                        <span class="category">{{ category }}</span>
-                                        {% endunless %}
-                                    {% endfor %}
-                                </div>
-                                <div class="playlist_item_title">{{ post.title }}</div>
-                            <div>
-                        </a>
-                    </li>
-                {% endif %}
-            {% endfor %}
-        </ul>
+        <div class="playlists">
+            <row>
+                <div class="heading">MAST 2019 Awards</div>
+                <ul class="playlist owl-carousel" autoplay="autoplay">
+                    {% for post in site.screenings %}
+                        {% if post.categories contains "Awards" %}
+                            <li class="playlist_item embargoed" date="{{ post.date | date_to_xmlschema }}">
+                                <a href="{{ post.url }}">
+                                    <div class="playlist_item_content">
+                                        <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
+                                        <div class="playlist_item_categories">
+                                            {% for category in post.categories %}
+                                                {% unless category contains "Awards" or category contains "Finalists" %}
+                                                    <span class="category">{{ category }}</span>
+                                                {% endunless %}
+                                            {% endfor %}
+                                        </div>
+                                        <div class="playlist_item_title">{{ post.title }}</div>
+                                    <div>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </row>
+            <row>
+                <div class="heading">MAST 2019 Finalists</div>
+                <ul class="playlist owl-carousel" autoplay="autoplay" extras="1">
+                    {% for post in site.screenings %}
+                        {% if post.categories contains "Finalists" %}
+                            <li class="playlist_item embargoed" date="{{ post.date | date_to_xmlschema }}">
+                                <a href="{{ post.url }}">
+                                    <div class="playlist_item_content">
+                                        <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
+                                        <div class="playlist_item_categories">
+                                            {% for category in post.categories %}
+                                                {% unless category contains "Awards" or category contains "Finalists" %}
+                                                    <span class="category">{{ category }}</span>
+                                                {% endunless %}
+                                            {% endfor %}
+                                        </div>
+                                        <div class="playlist_item_title">{{ post.title }}</div>
+                                    <div>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </row>
+            <row>
+                <div class="heading">MAST Nods</div>
+                <ul class="playlist owl-carousel" autoplay="autoplay" extras="2">
+                    {% for post in site.screenings %}
+                        {% if post.categories contains "Nods" %}
+                            <li class="playlist_item embargoed" date="{{ post.date | date_to_xmlschema }}">
+                                <a href="{{ post.url }}">
+                                    <div class="playlist_item_content">
+                                        <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
+                                        <div class="playlist_item_categories">
+                                            {% for category in post.categories %}
+                                                {% unless category contains "Nods" %}
+                                                    <span class="category">{{ category }}</span>
+                                                {% endunless %}
+                                            {% endfor %}
+                                        </div>
+                                        <div class="playlist_item_title">{{ post.title }}</div>
+                                    <div>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </row>
+        </div>
     </div>
     <!-- /SMALL SCREENINGS -->
 

@@ -308,10 +308,10 @@ function mast_prep_playlist_carousel() {
             nav: false,
             navSpeed: false,
             responsive: {
-                0:      { items: 2 },
-                500:    { items: 5 },
-                1600:   { items: 6 },
-                2000:   { items: 8 }
+                0:      { items: 2 + (parseInt(carousel.attr('extras')) || 0) },
+                500:    { items: 5 + (parseInt(carousel.attr('extras')) || 0) },
+                1600:   { items: 6 + (parseInt(carousel.attr('extras')) || 0) },
+                2000:   { items: 8 + (parseInt(carousel.attr('extras')) || 0) }
             }
         });
         

@@ -7,3 +7,14 @@ twitter:
 plugins:
   - jekyll-seo-tag
 timezone: America/Denver
+collections:
+  screenings:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: screenings
+    values:
+      layout: watch
+      permalink: /screenings/:title:output_ext
+      author: Miles Romney
