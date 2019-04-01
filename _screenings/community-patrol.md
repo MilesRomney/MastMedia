@@ -2,7 +2,7 @@
 title: "Community Patrol"
 categories: [Awards, Finalists, Micro-docs]
 date: 2018-03-31
-youtube: uawLHDmu9C4
+vimeo: 327479326
 filter_playlist: Awards
 ---
 
