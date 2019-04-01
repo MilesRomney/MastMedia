@@ -25,7 +25,7 @@ function mast_start_countdown() {
 		countdown: true,
 		language: 'Custom'
 	};  
-	var countdown = 1554094800 - ((new Date().getTime())/1000); // from: 03/31/2019 11:00 pm -0600
+	var countdown = 1554096600 - ((new Date().getTime())/1000); // from: 03/31/2019 11:00 pm -0600
 	countdown = Math.max(1, countdown);
     $('.countdown-clock').FlipClock(countdown, opts);
 }
