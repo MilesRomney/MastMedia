@@ -28,7 +28,7 @@ function mast_init_youtube(which) {
         },
         {
             id: "ZIl0Nqpt41A",
-            start: 13,
+            start: 20,
             duration: 90,
             title: "Navajo Tales: The Stars",
             attribution: "Julia Berrio et al",
