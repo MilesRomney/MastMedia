@@ -20,64 +20,34 @@ $(function () {
 function mast_init_youtube(which) {
     var videos = [
         {
-            id: "Y5YTV8TZT8U",
-            start: 4,
-            duration: 30,
-            title: "Reel",
-            attribution: "Gabriela Badillo"
+            id: "wsquzyv2lXc",
+            start: 1,
+            duration: 58,
+            title: "Sea Haunt",
+            attribution: "KC Tobey"
         },
         {
-            id: "H4-96GqPup4",
-            start: 80,
+            id: "ZIl0Nqpt41A",
+            start: 13,
             duration: 90,
-            title: "Brush: A Fox Tale",
-            attribution: "Willi Anton, Faustina Arriola"
-        },
-        {
-            id: "XxV4aUrGgeg",
-            start: 48,
-            duration: 180,
-            title: "The Legend of the Crab Phare",
-            attribution: "Supinfocom Valenciennes",
-            zoom: 1.2
-        },
-        {
-            id: "KwCtWfwYlkw",
-            start: 120,
-            duration: 120,
-            title: "The Box",
-            attribution: "Merve Cirisoglu Cotur, Yenal Cetin, Erhan Gezen"
-        },
-        {
-            id: "v7jP4T26tLs",
-            start: 20,
-            duration: 90,
-            title: "Un Sacré Mariage!",
-            attribution: "Francis Papillon, Gregory Verreault"
-        },
-        {
-            id: "gZyjJtBIlow",
-            start: 90,
-            duration: 190,
-            title: "A Fox and a Mouse",
-            attribution: "Camille Chaix et al",
-            zoom: 1.2
-        },
-        {
-            id: "x7QqijTXvaU",
-            start: 197,
-            duration: 120,
-            title: "CALDERA",
-            attribution: "Evan Viera",
+            title: "Navajo Tales: The Stars",
+            attribution: "Julia Berrio et al",
             zoom: 1.4
         },
         {
-            id: "VBps1IvCyj0",
+            id: "81DcP1jO1u0",
             start: 60,
             duration: 180,
-            title: "Lost and Found",
-            attribution: "Andrew Goldsmith & Bradley Slabe",
-            zoom: 1.2
+            title: "Warrior",
+            attribution: "Cole Sax and Jacob Callaghan",
+            zoom: 1.4
+        },
+        {
+            id: "eKGkxIuesTI",
+            start: 10,
+            duration: 47,
+            title: "Community Patrol",
+            attribution: "Andrew James"
         }
     ];
     which = which || (Math.floor(Math.random() * videos.length));
