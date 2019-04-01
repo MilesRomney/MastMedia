@@ -15,20 +15,7 @@ $(function () {
     mast_render_video();
     mast_prompt_vote('labtopicspoll');
     mast_prep_playlist_carousel();
-    mast_start_countdown();
 });
-
-function mast_start_countdown() {
-	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
-	var opts = {
-		clockFace: 'HourCounter',
-		countdown: true,
-		language: 'Custom'
-	};  
-	var countdown = 1554096600 - ((new Date().getTime())/1000); // from: 03/31/2019 11:00 pm -0600
-	countdown = Math.max(1, countdown);
-    $('.countdown-clock').FlipClock(countdown, opts);
-}
 
 function mast_init_youtube(which) {
     var videos = [
