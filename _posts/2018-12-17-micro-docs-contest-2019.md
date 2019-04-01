@@ -18,7 +18,7 @@ Entrants are encouraged to collaborate in groups, but may work alone, in produci
 
 # Submissions
 
-Video: All submissions must be a video documentary between 5 and 15 minutes in length, at least 1080p in resolution (4k preferred), should be accurate, should be emotionally impactful but avoid hyperbole, should touch the history, reality, challenges, progress of, or potential solutions to, racism and inequality. Depicting emotionally difficult subject matter is in keeping with the spirit of the contest, but providing a ray of hope is highly encouraged. We’re looking to inspire people to betterment, and not inadvertently exacerbate hate.
+Video: All submissions must be a video documentary between approximately 5 and 15 minutes in length, at least 1080p in resolution (4k preferred), should be accurate, should be emotionally impactful but avoid hyperbole, should touch the history, reality, challenges, progress of, or potential solutions to, racism and inequality. Depicting emotionally difficult subject matter is in keeping with the spirit of the contest, but providing a ray of hope is highly encouraged. We’re looking to inspire people to betterment, and not inadvertently exacerbate hate.
 
 # Awards
 

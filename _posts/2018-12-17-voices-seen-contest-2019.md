@@ -22,9 +22,7 @@ Video: All submissions must be a video animated short piece between 1 and 30 min
 
 # Awards
 
-Grand prize winners: A group of 5 to 10 grand prize winners will be selected. Each group will produce a 1- to 2-minute short animated scene with budget provided by MAST, in a short animated film produced and directed by (to-be-announced) marquee talent, for submission to the festival circuit. Winners will also receive complimentary enrollment (for up to 3 collaborators per winner) in all 2019 MAST labs, masterclasses, and networking events.
-
-Honorable mentions: Multiple honorable mentions may be selected. A cash award of $200 will be given to each.
+Grand prize winners: A group of 5 to 10 grand prize winners will be selected. Each group will produce a 1- to 2-minute short animated scene with budget provided by MAST, in a short animated film directed by Jared and Jerusha Hess (_Napoleon Dynamite_, _Nacho Libre_, _Austenland_), written by Hubbel Palmer and Chris Bowman (_Masterminds_), and produced for submission to the festival circuit. Winners will also receive complimentary enrollment (for up to 3 collaborators per winner) in all 2019 MAST labs, masterclasses, and networking events.
 
 Awards will be announced on March 31st.
 

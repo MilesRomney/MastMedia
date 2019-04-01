@@ -406,8 +406,22 @@ $scheme-snow-text-color: $black;
             }
         }
         
-        .playlist {
-            margin-top: 180px;
+        .playlists {
+            margin-top: 130px;
+
+            row {
+                padding-top: 50px;
+
+                .heading {
+                    font-size: 20px;
+                    font-weight: bold;
+                    position: relative;
+                    left: 10px;
+                    color: white;
+                    text-transform: uppercase;
+                    margin-top: 20px;
+                }
+            }
         }
     }
 }
@@ -1278,7 +1292,7 @@ body {
         @include ease();
 
         @media (max-width: $mobile-width) {
-            min-height: 200px;
+            min-height: 150px;
         }
 
         &.playing {
@@ -1309,6 +1323,71 @@ body {
             padding: 100px 20px 20px;
             top: -80px;                    
         }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .content {
+            max-height: 15vmax;
+            overflow: auto;
+
+            @media (max-width: $mobile-width) {
+                max-height: 20vmax;
+            }
+
+            &::-webkit-scrollbar
+            {
+                width: 8px;
+                border-radius: 6px;
+                background-color: rgba($light-grey, 0.1);
+            }
+
+            &::-webkit-scrollbar-thumb
+            {
+                border-radius: 6px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                background-color: $light-grey;
+            }
+
+            a {
+                color: white;
+                font-weight: bold;
+            }
+
+            blockquote {
+                margin-left: 20px;
+                color: $light-grey;
+
+                p {
+                    &:before,
+                    &:after {
+                        position: relative;
+                        top: 15px;
+                        display: inline-block;
+                        vertical-align: bottom;
+                        height: 10px;
+                        line-height: 10px;
+                        letter-spacing: 10px;
+                        font-size: 70px;
+                        opacity: .1;                
+                    }
+        
+                    &:first-child {
+                        &:before {
+                            content: '\201C';
+                        }
+                    }
+
+                    &:last-child {
+                        &:after {
+                            left: 6px;
+                            content: '\201D';
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .watch_playlist {
@@ -1326,10 +1405,38 @@ body {
     }
 }
 
+.playlists {
+    .heading {
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        left: 10px;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
 .playlist {
     z-index: 1;
 
     .owl-stage-outer {
+    }
+
+    @media (max-width: $mobile-width) {
+        &[extras="1"],
+        &[extras="2"],
+        &[extras="3"] {
+            .playlist_item_categories {
+                display: none;
+            }
+        }
+
+        &[extras="2"],
+        &[extras="3"] {
+            .playlist_item_title {
+                display: none;
+            }
+        }
     }
 
     .playlist_item {
