@@ -194,3 +194,9 @@ Gone.
 I opened my eyes and caught my reflection in the stainless steel furnace door. 
 
 Motherless . . .  
+
+<div class="description">
+Allison Hong Merrill was born and raised in Taiwan and immigrated to the U.S. at age twenty-two. She is a professional fashion/lifestyle model and a writer. For the past eight years she has been living a creative life through separate media: some days she models, some days she writes, but she never found a way to combine these two unrelated fields into a higher form of artistic expression. Not until she discovered the MAST <em>People of Earth</em> contest.
+<br /><br />
+Allison has participated in photoshoots that highlight the diversity of Chinese culture. In her winning piece, <em>The Child’s Palace</em>, she incorporates the image of herself in indigenous Chinese dress with her essay about the beauty and truth of a traditional Chinese mother’s love. Her intention is to bring her modeling and writing lives together to share the poignant story of the loss of her mother. Allison plans to use this unique way of storytelling to write a photographic memoir. And she hopes to share more of her work with the MAST audience.
+</div>
