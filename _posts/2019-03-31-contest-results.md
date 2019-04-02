@@ -70,7 +70,7 @@ _The Letter in the Book_ by Melissa Carton and Emily Bourne
 
 _Friends of the Street_ by Darby Biley
 
-_Reflections_ by Natalia Salama and Elena Khomitch
+_Reflections_ by Natalia Salama and Elena Homitch
 
 **All of these are on available for viewing at <a href="/#screenings">MAST Big Readings</a>.**
 
