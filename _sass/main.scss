@@ -1236,10 +1236,6 @@ body {
 
     @include ease(1s);
 
-    @media (max-width: $mobile-width) {
-        height: 100vmax;
-    }
-
     .watch_header {
         @include ease();
 
@@ -1297,22 +1293,26 @@ body {
         }
     }
 
-    .player {
+    .player,
+    .viewer {
         position: relative;
-        width: 100%;
-        min-height: 480px;
         transform: scale(0.95);
         margin: 0;
         padding: 0;
         z-index: 10;
-        border-radius: 10px;
-        overflow: hidden;
+
+        @include ease();
+    }
+
+    .player {
+        background: black;
+        width: 100%;
+        min-height: 480px;
         -webkit-box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
         -moz-box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
         box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
-        background: black;
-
-        @include ease();
+        overflow: hidden;
+        border-radius: 10px;
 
         @media (max-width: $mobile-width) {
             min-height: 150px;
@@ -1320,6 +1320,18 @@ body {
 
         &.playing {
             transform: none;
+        }
+    }
+
+    .viewer {
+        width: 100%;
+
+        img {
+            max-height: 90vh;
+            -webkit-box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
+            box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
+            border-radius: 10px;
         }
     }
 
@@ -1334,17 +1346,33 @@ body {
         z-index: 1;
         line-height: 22px;
 
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+68&0+0,0.65+68 */
-        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 68%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 68%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+18&0+0,0.65+18 */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 18%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 18%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 18%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 
         @include ease();
 
-        @media (max-width: $mobile-width) {
-            padding: 100px 20px 20px;
-            top: -80px;                    
+        .description {
+            text-align: right;
+            padding: 20px 0 20px 20px;
+            margin-bottom: 20px;
+            color: $light-grey;
+            float: right;
+            width: 60%;
+
+            @media (max-width: $mobile-width) {
+                width: 90%;
+            }
+
+            p {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        h4 {
+            clear: both;
         }
 
         p {
@@ -1352,7 +1380,7 @@ body {
         }
 
         .content {
-            max-height: 15vmax;
+            /*max-height: 15vmax;
             overflow: auto;
 
             @media (max-width: $mobile-width) {
@@ -1371,11 +1399,52 @@ body {
                 border-radius: 6px;
                 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
                 background-color: $light-grey;
-            }
+            }*/
 
             a {
                 color: white;
                 font-weight: bold;
+            }
+
+            star {
+                display: inline-block;
+                width: 100%;
+                margin: 20px 0;
+
+                &:after {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: bold;
+                    content: '*';
+                }
+            }
+
+            block {
+                margin: 0 25% 20px;
+                display: inline-block;
+
+                @media (max-width: $mobile-width) {
+                    margin: 0 20px 20px;
+                }    
+            }
+
+            subheading {
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: bold;
+                margin: 30px 0 15px;
+                text-align: center;
+                width: 100%;
+            }
+
+            .addthis_inline_share_toolbox {
+                transform: scale(0.7);
+                position: absolute;
+                right: -7px;
+                margin-top: -50px;
             }
 
             blockquote {

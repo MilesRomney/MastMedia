@@ -6,8 +6,8 @@ description: "MAST's 2019 contest results are in."
 categories: [contests]
 author: "Miles Romney"
 color_scheme: "snow"
-preview_image: "/assets/img/posts/people-of-earth-2019/the-childs-palace.jpg"
-banner_image: "/assets/img/posts/people-of-earth-2019/the-childs-palace-banner.jpg"
+preview_image: "/assets/img/posts/2019-contest-results.jpg"
+banner_image: "/assets/img/posts/2019-contest-results-banner.jpg"
 ---
 
 At MAST, we believe we're all defined by our stories. So we kicked off our program in 2019 with a call for stories of various kinds: documentaries, animations, and the written word paired with photography. We could not be more pleased with the results. We're based in Salt Lake City, and many of our submissions came from locals, here. But we also saw submissions from as far off as Brazil, and Belarus. We saw a breathtaking diversity of story and contest—precisely what we'd hoped to see. The power or regional filmmaking is all about that, it's all in the variety of cultures, backgrounds, beliefs, and lifestyles that come to bear in writing and producing stories that make people think a little differently.
@@ -72,7 +72,7 @@ _Friends of the Street_ by Darby Biley
 
 _Reflections_ by Natalia Salama and Elena Khomitch
 
-**These will be posted shortly here on MastStudio.org.**
+**All of these are on available for viewing at <a href="/#screenings">MAST Big Readings</a>.**
 
 
 A profound thanks to all you artists who shared your work with us. We're building MAST for _you_, and we can't wait to see how you engage with the program long into the future.
