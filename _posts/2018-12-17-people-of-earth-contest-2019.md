@@ -28,9 +28,9 @@ All submissions must include both a photograph and a character profile/story. Th
 
 # Awards
 
-Grand prize winner: A single grand prize winner will be selected. A cash award of $2,000 USD will be divided between the writer and photographer of the winning submission), along with complimentary enrollment (for both the writer and photographer) in all 2019 MAST labs, masterclasses, and networking events.
+Grand Prize Winner: A single Grand Prize Winner will be selected. A cash award of $2,000 USD will be divided between the writer and photographer of the winning submission), along with complimentary enrollment (for both the writer and photographer) in all 2019 MAST labs, masterclasses, and networking events.
 
-Honorable mentions: Multiple honorable mentions may be selected. A cash award of $200 will be given to each (divided between writer and photographer).
+Winners: Multiple Winners may be selected. A cash award of $200 will be given to each (divided between writer and photographer). (When the contest was announced, this tier was dubbed "Honorable Mention". We determined, however, that "Winner" was more in keeping with the spirit of the contest. A change in terminology was made, but the awards themselves were not altered.)
 
 Awards will be announced on March 31st.
 

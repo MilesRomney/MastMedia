@@ -1,7 +1,7 @@
 ---
 title: "Homeless"
 title_color: FireBrick
-description: "MAST awards a 2019 People of Earth Honorable Mention to _Homeless_, a script and photograph by Hilary Packham."
+description: "MAST awards a 2019 Micro-docs Winner distinction to _Homeless_, a script and photograph by Hilary Packham."
 categories: [Awards, Finalists, People of Earth]
 date: 2019-03-31
 image: https://mastly.s3.amazonaws.com/people-of-earth-2019/Homeless.jpg

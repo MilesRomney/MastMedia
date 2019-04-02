@@ -6,7 +6,7 @@ youtube: WG2_sTqNvi4
 filter_playlist: Awards
 ---
 
-MAST awards a 2019 Micro-docs Honorable Mention to _Salsa Mocajete"_, a film by An Dinh and Alhondra Lopez.
+MAST awards a 2019 Micro-docs Winner distinction to _Salsa Mocajete"_, a film by An Dinh and Alhondra Lopez.
 
 A young woman from Michoacan, Mexico shares her family's salsa recipe and reflects on the current political climate.
 

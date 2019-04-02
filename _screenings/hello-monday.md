@@ -1,7 +1,7 @@
 ---
 title: "Hello, Monday"
 title_color: RebeccaPurple
-description: "MAST awards a 2019 People of Earth Honorable Mention to _Hello, Monday_, a poem by Jasmine Pittman with photograph by Courtney Showers."
+description: "MAST awards a 2019 Micro-docs Winner distinction to _Hello, Monday_, a poem by Jasmine Pittman with photograph by Courtney Showers."
 categories: [Awards, Finalists, People of Earth]
 date: 2019-03-31
 image: https://mastly.s3.amazonaws.com/people-of-earth-2019/Hello%2C%20Monday.jpg

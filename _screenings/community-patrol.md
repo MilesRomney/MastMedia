@@ -6,7 +6,7 @@ vimeo: 327479326
 filter_playlist: Awards
 ---
 
-MAST awards a 2019 Micro-docs Honorable Mention to _Community Patrol_, a film by Andrew James. The film will be premiering in April with The Atlantic, and will go live here at MAST Small Screenings shortly thereafter. In the meantime, we present this trailer.
+MAST awards a 2019 Micro-docs Winner distinction to _Community Patrol_, a film by Andrew James. The film will be premiering in April with The Atlantic, and will go live here at MAST Small Screenings shortly thereafter. In the meantime, we present this trailer.
 
 It’s been widely reported that Detroit is making a comeback, but long-term residents of Detroit’s mostly black neighborhoods aren’t seeing much benefit. Crime, lack of opportunity and infrastructure problems still persist. Community Patrol explores neighborhood self-policing through the eyes of Minister Malik Shabazz, a long-time Detroit activist and community organizer. Determined that more black men don’t end up in jail or killed, the minister confronts drug offenders directly rather than reporting them to the police.
 

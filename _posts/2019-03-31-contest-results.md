@@ -42,11 +42,11 @@ _Hip Hop Howls_ by Tim Rowberry
 
 _Warrior_ by Cole Sax and Jacob Callaghan — **Grand Prize Winner**
 
-_Community Patrol_ by Andrew James — **Honorable Mention**
+_Community Patrol_ by Andrew James — **Winner**
 
-_DACA-Mented_ by Moises Lemus — **Honorable Mention**
+_DACA-Mented_ by Moises Lemus — **Winner**
 
-_Salsa Molcajete_ by An Dinh and Alhondra Lopez — **Honorable Mention**
+_Salsa Molcajete_ by An Dinh and Alhondra Lopez — **Winner**
 
 _Faithful_ by Jenn Lee Smith and Dane Christensen
 
@@ -60,9 +60,9 @@ _Snowland_ by Jill Orschel
 
 _The Child's Palace_ by Allison Hong Merrill — **Grand Prize Winner**
 
-_Hello, Monday_ by Courtney Showers and Jasmine Pittman — **Honorable Mention**
+_Hello, Monday_ by Courtney Showers and Jasmine Pittman — **Winner**
 
-_Homeless_ by Hilary Packham — **Honorable Mention**
+_Homeless_ by Hilary Packham — **Winner**
 
 _The Keeper_ by Jean Stinnett and Shawn Morrow
 

@@ -562,22 +562,25 @@ a.button {
 
 .macro_list {
     .list_li {
-        .title_item {
-            @include text-outline($black, 1px, 3px);
-        }
+        .blog_definitions_wrap {
+            color: white;
 
-        .category_blog {
-            color: $black !important;
-            font-weight: 700 !important;
-        }
+            .title_item {
+                @include text-outline($black, 1px, 3px);
+            }
 
-        .category_blog {
-            background: none !important;
-            padding: 0 !important;
+            .category_blog {
+                font-weight: 700 !important;
+            }
 
-            span {
-                margin-right: 2px;
-                padding: 5px 10px;
+            .category_blog {
+                background: none !important;
+                padding: 0 !important;
+
+                span {
+                    margin-right: 2px;
+                    padding: 5px 10px;
+                }
             }
         }
     }
