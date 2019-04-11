@@ -10,6 +10,8 @@ timezone: America/Denver
 collections:
   screenings:
     output: true
+  voices_seen:
+    output: true
 defaults:
   - scope:
       path: ""
@@ -17,4 +19,11 @@ defaults:
     values:
       layout: watch
       permalink: /screenings/:title:output_ext
+      author: Miles Romney
+  - scope:
+      path: ""
+      type: voices_seen
+    values:
+      layout: voices-seen
+      permalink: /voices-seen/:title:output_ext
       author: Miles Romney
