@@ -1485,6 +1485,11 @@ body {
 
             attribution {
                 float: right;
+                padding-right: 15px;
+
+                &:before {
+                    content: '— ';
+                }
             }
         }
     }
