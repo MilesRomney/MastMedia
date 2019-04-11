@@ -1,7 +1,7 @@
 ---
 title: "Kagemono: The Shadow Folk"
 categories: [Animations, Nods]
-date: 2019-04-12
+date: 2019-04-10
 youtube: P2iCJVqHqRo
 filter_playlist: Nods
 ---
