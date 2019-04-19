@@ -223,7 +223,7 @@ $scheme-snow-text-color: $black;
                 font-family: $font-family;
                 font-size: 12px;
                 text-align: right;
-            }            
+            }         
 
             @media (max-width: $mobile-width) {
                 display: none;
@@ -726,6 +726,19 @@ a.button {
 
 .padded-bottom {
     padding-bottom: 100px;
+}
+
+pre {
+    overflow-x: auto !important;
+}
+
+attribution {
+    float: right;
+    padding-right: 15px;
+
+    &:before {
+        content: '— ';
+    }
 }
 
 #discord {
@@ -1481,15 +1494,6 @@ body {
                             content: '\201D';
                         }
                     }
-                }
-            }
-
-            attribution {
-                float: right;
-                padding-right: 15px;
-
-                &:before {
-                    content: '— ';
                 }
             }
         }

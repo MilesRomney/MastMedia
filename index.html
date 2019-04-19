@@ -133,9 +133,9 @@ title: MAST by Salt Lake Film Society
                                             <span class="title_item"><a href="{{ post.url }}">{{ post.title }}</a></span>
                                             <p class="description_blog">{{ post.description | markdownify }}</p>
                                         </div>
-                                        <div class="category_blog">
+                                        <div class="category_blog accent-bg">
                                             {% for category in post.categories %}
-                                                <span class="accent-bg">{{ category }}</span>
+                                                <span>{{ category }}</span>
                                             {% endfor %}
                                         </div>
                                     </div>
