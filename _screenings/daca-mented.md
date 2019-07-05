@@ -6,4 +6,4 @@ youtube: jJ-H6pNlLSo
 filter_playlist: Awards
 ---
 
-MAST awards a 2019 Micro-docs Honorable Mention to _DACA-Mented "A Dreamers Story"_, a film by Moises Lemus.
+MAST awards a 2019 Micro-docs Winner distinction to _DACA-Mented "A Dreamers Story"_, a film by Moises Lemus.

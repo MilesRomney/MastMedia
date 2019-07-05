@@ -10,8 +10,13 @@ title: MAST by Salt Lake Film Society
         </a>
         <a class="home" href="/">
             <div class="title">
-                <span class="small">small</span>
-                <span class="screenings">screenings</span>
+                {% if page.image %}
+                    <span class="small">big</span>
+                    <span class="screenings">readings</span>
+                {% else %}
+                    <span class="small">small</span>
+                    <span class="screenings">screenings</span>
+                {% endif %}
             </div>
             <img src="/assets/img/branding/mast-white-small.png" />
         </a>
@@ -28,8 +33,26 @@ title: MAST by Salt Lake Film Society
         </div>
     {% endif %}
 
+    {% if page.image %}
+        <div class="viewer">
+            <img src="{{ page.image }}" />
+        </div>
+    {% endif %}
+
     <div class="watch_info">
         <div class="content">
+            <div class="addthis_inline_share_toolbox"></div>
+
+            {% if page.description %}
+                <div class="description">
+                    {{ page.description | markdownify }}
+                </div>
+            {% endif %}
+
+            {% if page.title_color %}
+                <h4 style="color: {{page.title_color}}">{{ page.title }}</h4>
+            {% endif %}
+
             {{ content }}
         </div>
     </div>
@@ -77,3 +100,4 @@ title: MAST by Salt Lake Film Society
     </div>
 </div>
 <!-- /CONTENT -->
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ca2b2b9c2f76906"></script>

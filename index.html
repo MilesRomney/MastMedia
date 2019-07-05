@@ -131,11 +131,11 @@ title: MAST by Salt Lake Film Society
                                         <div class="blog_definitions_wrap">
                                             <p class="date accent">{{ post.date | date_to_long_string }}</p>
                                             <span class="title_item"><a href="{{ post.url }}">{{ post.title }}</a></span>
-                                            <p class="description_blog">{{ post.description }}</p>
+                                            <p class="description_blog">{{ post.description | markdownify }}</p>
                                         </div>
-                                        <div class="category_blog">
+                                        <div class="category_blog accent-bg">
                                             {% for category in post.categories %}
-                                                <span class="accent-bg">{{ category }}</span>
+                                                <span>{{ category }}</span>
                                             {% endfor %}
                                         </div>
                                     </div>
@@ -182,9 +182,11 @@ title: MAST by Salt Lake Film Society
                 <div class="subheading" id="labs">Labs</div>
                 <p>In keeping with MAST's forward-thinking mission, our labs will cover topics ranging from novel uses of free-to-use and open-source software for keeping production costs low, to guerilla production tactics for indie content creators, to business and brand-building essentials for artist entrepreneurs. Instructors will be subject matter experts, and wherever possible, prominent influencers and advocates for the technologies and methodologies they teach.</p>
                 <p>Labs are designed as an essential element of the MAST Fellowship, but are open to the public for a fee, both in-person or online.</p>
-                <p>April's lab has been announced, and <a href="https://j.mp/mast-agile-ticketing" target="_NEW">tickets are available now</a>. May's and June's labs will be announced soon.</p>
-
-                <a href="https://j.mp/mast-agile-ticketing" target="_NEW"><img src="/assets/img/labs/Lab-April-2019-banner-1b-Live with the experts-web.jpg" /></a>
+                <p>April's lab was "Distribution Unmasked", part of our "Business of the Business" series.</p>
+                <img src="https://mastly.s3.amazonaws.com/agile/img/events/Lab%20April%202019%20banner%201b%20%28Live%20with%20the%20experts%29%20web.jpg" />
+                <p>May's lab was "Building a Plan for Success", part of our "Survival Skills for Artist Entrepreneurs" series.</p>
+                <img src="https://mastly.s3.amazonaws.com/agile/img/events/Lab%20May%202019%20banner%201a%20%28Frame%20Your%20Career%29%20web.jpg" />
+                <p>Our upcoming labs include "Build the Brand of You", "360/VR Essentials", and "VFX for Indie Filmmakers".</p>
 
                 <div id="poll" class="cognito poll">
                     <script src="https://services.cognitoforms.com/s/80W-TsSO5kKqQ99QmiagdQ"></script>
