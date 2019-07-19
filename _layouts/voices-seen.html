@@ -3,7 +3,7 @@ layout: basic
 title: MAST by Salt Lake Film Society
 ---
 <!-- CONTENT -->
-<div class="watch_content">
+<div class="watch_content category_feature voices_seen">
     <div class="watch_header">
         <a class="back" href="javascript:window.history.back();">
             <img src="/assets/img/svg/back.svg" />
@@ -20,6 +20,26 @@ title: MAST by Salt Lake Film Society
             </div>
             <img src="/assets/img/branding/mast-white-small.png" />
         </a>
+    </div>
+    <div class="watch_playlist playlists">
+        <div class="heading">Voices Seen</div>
+        <ul class="playlist owl-carousel">
+            {% for post in site.voices_seen %}
+                <li class="playlist_item randomize embargoed" date="{{ post.date | date_to_xmlschema }}">
+                    <a href="{{ post.url }}">
+                        <div class="playlist_item_content">
+                            <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
+                            <div class="playlist_item_categories">
+                                {% for category in post.categories %}
+                                    <span class="category">{{ category }}</span>
+                                {% endfor %}
+                            </div>
+                            <div class="playlist_item_title">{{ post.title }}</div>
+                        <div>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
     {% if page.vimeo %}
         <div class="player">
@@ -64,27 +84,6 @@ title: MAST by Salt Lake Film Society
 
             {{ content }}
         </div>
-    </div>
-
-    <div class="watch_playlist playlists">
-        <div class="heading">Voices Seen</div>
-        <ul class="playlist owl-carousel">
-            {% for post in site.voices_seen %}
-                <li class="playlist_item randomize embargoed" date="{{ post.date | date_to_xmlschema }}">
-                    <a href="{{ post.url }}">
-                        <div class="playlist_item_content">
-                            <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
-                            <div class="playlist_item_categories">
-                                {% for category in post.categories %}
-                                    <span class="category">{{ category }}</span>
-                                {% endfor %}
-                            </div>
-                            <div class="playlist_item_title">{{ post.title }}</div>
-                        <div>
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
     </div>
 </div>
 <!-- /CONTENT -->
