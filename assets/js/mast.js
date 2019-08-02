@@ -13,7 +13,7 @@ $(function () {
     mast_init_discord();
     mast_prep_cognito();
     mast_render_video();
-    mast_prompt_vote('labtopicspoll');
+    mast_prompt_lab('bonanzamonth');
     mast_prep_playlist_carousel();
 });
 
@@ -229,20 +229,20 @@ function onVimeoPlayerStateChange(state) {
     }
 }*/
 
-function mast_prompt_vote(cookie) {
-    var vote = $('.vote');
+function mast_prompt_lab(cookie) {
+    var lab = $('.featured-lab');
 
     if (document.cookie.indexOf(cookie) < 0) {
         setTimeout(function () {
-            vote.addClass('active').find('.yes').click(function () {
-                document.location.href = '#poll';
+            lab.addClass('active').find('.yes').click(function () {
+                document.location.href = '#currentlab';
                 document.cookie = cookie + '=true';
-                vote.removeClass('active');
+                lab.removeClass('active');
             });
 
-            vote.find('.no').click(function () {
+            lab.find('.no').click(function () {
                 document.cookie = cookie + '=true';
-                vote.removeClass('active');
+                lab.removeClass('active');
             });
         }, 1500);
     }
