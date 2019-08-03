@@ -20,6 +20,34 @@ $(function () {
 function mast_init_youtube(which) {
     var videos = [
         {
+            id: "WH6hhKf1twU",
+            start: 1,
+            duration: 120,
+            title: "We'll Never Feel Bad Anymore",
+            attribution: "Michael Grover"
+        },
+        {
+            id: "7htN5KDxyP8",
+            start: 5,
+            duration: 60,
+            title: "Un Sacré Mariage!",
+            attribution: "Francis Papillon & Gregory Verreault"
+        },
+        {
+            id: "VBps1IvCyj0",
+            start: 4,
+            duration: 60,
+            title: "Lost and Found",
+            attribution: "Andrew Goldsmith & Bradley Slabe"
+        },
+        {
+            id: "c6bUOMFEoWg",
+            start: 10,
+            duration: 60,
+            title: "Being Good",
+            attribution: "Jenny Harder"
+        },
+        {
             id: "wsquzyv2lXc",
             start: 1,
             duration: 58,
@@ -32,14 +60,6 @@ function mast_init_youtube(which) {
             duration: 90,
             title: "Navajo Tales: The Stars",
             attribution: "Julia Berrio et al",
-            zoom: 1.4
-        },
-        {
-            id: "81DcP1jO1u0",
-            start: 60,
-            duration: 180,
-            title: "Warrior",
-            attribution: "Cole Sax and Jacob Callaghan",
             zoom: 1.4
         },
         {
