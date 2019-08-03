@@ -22,20 +22,20 @@ function mast_init_youtube(which) {
         {
             id: "WH6hhKf1twU",
             start: 1,
-            duration: 120,
+            duration: 80,
             title: "We'll Never Feel Bad Anymore",
             attribution: "Michael Grover"
         },
         {
             id: "7htN5KDxyP8",
-            start: 5,
+            start: 10,
             duration: 60,
             title: "Un Sacré Mariage!",
             attribution: "Francis Papillon & Gregory Verreault"
         },
         {
             id: "VBps1IvCyj0",
-            start: 4,
+            start: 15,
             duration: 60,
             title: "Lost and Found",
             attribution: "Andrew Goldsmith & Bradley Slabe"
