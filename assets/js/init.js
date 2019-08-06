@@ -344,7 +344,7 @@ function macro_tm_magnific_popup(){
 		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
 	
-	jQuery('.gallery').each(function() { // the containers for all your galleries
+	jQuery('.mfp-gallery').each(function() { // the containers for all your galleries
 		jQuery(this).magnificPopup({
 			delegate: 'a', // the selector for gallery item
 			type: 'image',
@@ -353,7 +353,7 @@ function macro_tm_magnific_popup(){
 			}
 		});
 	});
-	jQuery('.gallery_zoom').each(function() { // the containers for all your galleries
+	jQuery('.mfp-gallery_zoom').each(function() { // the containers for all your galleries
 		jQuery(this).magnificPopup({
 			delegate: 'a.zoom', // the selector for gallery item
 			type: 'image',

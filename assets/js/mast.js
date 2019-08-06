@@ -15,6 +15,7 @@ $(function () {
     mast_render_video();
     mast_prompt_lab('bonanzamonth');
     mast_prep_playlist_carousel();
+    mast_prep_gallery_carousel();
 });
 
 function mast_init_youtube(which) {
@@ -315,6 +316,28 @@ function mast_prep_playlist_carousel() {
         next.on('click',function(){
             carousel.trigger('next.owl.carousel');
             return false;
+        });
+    });
+}
+
+function mast_prep_gallery_carousel() {
+    $('.gallery.owl-carousel').each(function(k, v){
+        var carousel = $(v);
+        carousel.owlCarousel({
+            loop: false,
+            items: 2,
+            lazyLoad: true,
+            margin: 5,
+            autoplay: false,
+            smartSpeed: 1000,
+            dots: true,
+            nav: false,
+            navSpeed: false,
+            responsive: {
+                0:      { items: 2 },
+                1600:   { items: 3 },
+                2000:   { items: 4 }
+            }
         });
     });
 }
