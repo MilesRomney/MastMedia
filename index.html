@@ -9,10 +9,10 @@ title: MAST by Salt Lake Film Society
     <div class="macro_tm_section">
         {% include youtube.html %}
         <div class="top_bg_content home">
-            <div class="vote report_scroll_state">
-                Vote for 2019 lab topics?
+            <div class="featured-lab report_scroll_state">
+                August is 360/VR & VFX month, with 3 labs!
                 <div class="buttons">
-                    <div class="yes left">Yes please</div>
+                    <div class="yes left">Check it out</div>
                     <div class="no right">No thanks</div>
                 </div>
             </div>
@@ -36,27 +36,80 @@ title: MAST by Salt Lake Film Society
             </div>
             <img src="/assets/img/branding/mast-white-small.png" />
         </div>
-        <ul class="playlist owl-carousel" autoplay="autoplay">
-            {% for post in site.posts %}
-                {% if post.layout contains "watch" %}
-                    <li class="playlist_item embargoed" date="{{ post.date | date_to_xmlschema }}">
-                        <a href="{{ post.url }}">
-                            <div class="playlist_item_content">
-                                <img class="playlist_item_image" src="{{ post.preview_image }}" alt="" />
-                                <div class="playlist_item_categories">
-                                    {% for category in post.categories %}
-                                        {% unless category == "nods" %}
-                                        <span class="category">{{ category }}</span>
-                                        {% endunless %}
-                                    {% endfor %}
-                                </div>
-                                <div class="playlist_item_title">{{ post.title }}</div>
-                            <div>
-                        </a>
-                    </li>
-                {% endif %}
-            {% endfor %}
-        </ul>
+        <div class="playlists">
+            <row>
+                <div class="heading">MAST 2019 Awards</div>
+                <ul class="playlist owl-carousel" autoplay="autoplay">
+                    {% for post in site.screenings %}
+                        {% if post.categories contains "Awards" %}
+                            <li class="playlist_item embargoed" date="{{ post.date | date_to_xmlschema }}">
+                                <a href="{{ post.url }}">
+                                    <div class="playlist_item_content">
+                                        <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
+                                        <div class="playlist_item_categories">
+                                            {% for category in post.categories %}
+                                                {% unless category contains "Awards" or category contains "Finalists" %}
+                                                    <span class="category">{{ category }}</span>
+                                                {% endunless %}
+                                            {% endfor %}
+                                        </div>
+                                        <div class="playlist_item_title">{{ post.title }}</div>
+                                    <div>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </row>
+            <row>
+                <div class="heading">MAST 2019 Finalists</div>
+                <ul class="playlist owl-carousel" autoplay="autoplay" extras="1">
+                    {% for post in site.screenings %}
+                        {% if post.categories contains "Finalists" %}
+                            <li class="playlist_item embargoed" date="{{ post.date | date_to_xmlschema }}">
+                                <a href="{{ post.url }}">
+                                    <div class="playlist_item_content">
+                                        <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
+                                        <div class="playlist_item_categories">
+                                            {% for category in post.categories %}
+                                                {% unless category contains "Awards" or category contains "Finalists" %}
+                                                    <span class="category">{{ category }}</span>
+                                                {% endunless %}
+                                            {% endfor %}
+                                        </div>
+                                        <div class="playlist_item_title">{{ post.title }}</div>
+                                    <div>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </row>
+            <row>
+                <div class="heading">MAST Nods</div>
+                <ul class="playlist owl-carousel" autoplay="autoplay" extras="2">
+                    {% for post in site.screenings %}
+                        {% if post.categories contains "Nods" %}
+                            <li class="playlist_item embargoed" date="{{ post.date | date_to_xmlschema }}">
+                                <a href="{{ post.url }}">
+                                    <div class="playlist_item_content">
+                                        <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
+                                        <div class="playlist_item_categories">
+                                            {% for category in post.categories %}
+                                                {% unless category contains "Nods" %}
+                                                    <span class="category">{{ category }}</span>
+                                                {% endunless %}
+                                            {% endfor %}
+                                        </div>
+                                        <div class="playlist_item_title">{{ post.title }}</div>
+                                    <div>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </row>
+        </div>
     </div>
     <!-- /SMALL SCREENINGS -->
 
@@ -78,11 +131,11 @@ title: MAST by Salt Lake Film Society
                                         <div class="blog_definitions_wrap">
                                             <p class="date accent">{{ post.date | date_to_long_string }}</p>
                                             <span class="title_item"><a href="{{ post.url }}">{{ post.title }}</a></span>
-                                            <p class="description_blog">{{ post.description }}</p>
+                                            <p class="description_blog">{{ post.description | markdownify }}</p>
                                         </div>
-                                        <div class="category_blog">
+                                        <div class="category_blog accent-bg">
                                             {% for category in post.categories %}
-                                                <span class="accent-bg">{{ category }}</span>
+                                                <span>{{ category }}</span>
                                             {% endfor %}
                                         </div>
                                     </div>
@@ -129,8 +182,13 @@ title: MAST by Salt Lake Film Society
                 <div class="subheading" id="labs">Labs</div>
                 <p>In keeping with MAST's forward-thinking mission, our labs will cover topics ranging from novel uses of free-to-use and open-source software for keeping production costs low, to guerilla production tactics for indie content creators, to business and brand-building essentials for artist entrepreneurs. Instructors will be subject matter experts, and wherever possible, prominent influencers and advocates for the technologies and methodologies they teach.</p>
                 <p>Labs are designed as an essential element of the MAST Fellowship, but are open to the public for a fee, both in-person or online.</p>
-                <p>Labs will begin in April 2019, and will be announced beginning in March.</p>
-
+                <p>April's lab was "Distribution Unmasked", part of our "Business of the Business" series.</p>
+                <a id="currentlab"></a>
+                <p>August 19th-22nd we're holding our 360/VR & VFX series.</p>
+                <a href="https://j.mp/mast-agile-ticketing" target="_NEW"><img src="https://mastly.s3.amazonaws.com/agile/img/events/360VR%20Keynotes%20August%202019%20banner%201%20web.jpg" /></a>
+                <a href="https://j.mp/mast-agile-ticketing" target="_NEW"><img src="https://mastly.s3.amazonaws.com/agile/img/events/360VR%20Lab%20August%202019%20banner%201%20web.jpg" /></a>
+                <a href="https://j.mp/mast-agile-ticketing" target="_NEW"><img src="https://mastly.s3.amazonaws.com/agile/img/events/VFX%20Lab%20August%202019%20banner%201%20web.jpg" /></a>
+                <h4><a href="https://j.mp/mast-agile-ticketing" target="_NEW" class="button spaced">RESERVE YOUR SPOT NOW</a></h4>
                 <div id="poll" class="cognito poll">
                     <script src="https://services.cognitoforms.com/s/80W-TsSO5kKqQ99QmiagdQ"></script>
                     <script>Cognito.load("forms", { id: "5" });</script>

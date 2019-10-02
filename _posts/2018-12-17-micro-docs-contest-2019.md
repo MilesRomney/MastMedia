@@ -18,13 +18,13 @@ Entrants are encouraged to collaborate in groups, but may work alone, in produci
 
 # Submissions
 
-Video: All submissions must be a video documentary between 5 and 15 minutes in length, at least 1080p in resolution (4k preferred), should be accurate, should be emotionally impactful but avoid hyperbole, should touch the history, reality, challenges, progress of, or potential solutions to, racism and inequality. Depicting emotionally difficult subject matter is in keeping with the spirit of the contest, but providing a ray of hope is highly encouraged. We’re looking to inspire people to betterment, and not inadvertently exacerbate hate.
+Video: All submissions must be a video documentary between approximately 5 and 15 minutes in length, at least 1080p in resolution (4k preferred), should be accurate, should be emotionally impactful but avoid hyperbole, should touch the history, reality, challenges, progress of, or potential solutions to, racism and inequality. Depicting emotionally difficult subject matter is in keeping with the spirit of the contest, but providing a ray of hope is highly encouraged. We’re looking to inspire people to betterment, and not inadvertently exacerbate hate.
 
 # Awards
 
-Grand prize winner: A single grand prize winner will be selected. A cash award of $2,000 USD will be divided among the group collaborators, along with complimentary enrollment (for up to 3 collaborators per winner) in all 2019 MASt! labs, masterclasses, and networking events.
+Grand Prize Winner: A single Grand Prize Winner will be selected. A cash award of $2,000 USD will be divided among the group collaborators, along with complimentary enrollment (for up to 3 collaborators per winner) in all 2019 MASt! labs, masterclasses, and networking events.
 
-Honorable mentions: Multiple honorable mentions may be selected. A cash award of $200 will be given to each (divided among the group).
+Winners: Multiple Winners may be selected. A cash award of $200 will be given to each (divided among the group). (When the contest was announced, this tier was dubbed "Honorable Mention". We determined, however, that "Winner" was more in keeping with the spirit of the contest. A change in terminology was made, but the awards themselves were not altered.)
 
 Awards will be announced on March 31st.
 

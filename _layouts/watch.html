@@ -10,8 +10,13 @@ title: MAST by Salt Lake Film Society
         </a>
         <a class="home" href="/">
             <div class="title">
-                <span class="small">small</span>
-                <span class="screenings">screenings</span>
+                {% if page.image %}
+                    <span class="small">big</span>
+                    <span class="screenings">readings</span>
+                {% else %}
+                    <span class="small">small</span>
+                    <span class="screenings">screenings</span>
+                {% endif %}
             </div>
             <img src="/assets/img/branding/mast-white-small.png" />
         </a>
@@ -28,22 +33,60 @@ title: MAST by Salt Lake Film Society
         </div>
     {% endif %}
 
+    {% if page.image %}
+        <div class="viewer">
+            <img src="{{ page.image }}" />
+        </div>
+    {% endif %}
+
     <div class="watch_info">
-        {{ content }}
+        <div class="content">
+            <div class="addthis_inline_share_toolbox"></div>
+
+            {% if page.description %}
+                <div class="description">
+                    {{ page.description | markdownify }}
+                </div>
+            {% endif %}
+
+            {% if page.title_color %}
+                <h4 style="color: {{page.title_color}}">{{ page.title }}</h4>
+            {% endif %}
+
+            {{ content }}
+        </div>
     </div>
 
-    <div class="watch_playlist">
+    <div class="watch_playlist playlists">
+        {% if page.filter_playlist %}
+            <div class="heading">{{ page.filter_playlist }}</div>
+        {% endif %}
         <ul class="playlist owl-carousel">
-            {% for post in site.posts %}
-                {% if post.layout contains "watch" %}
+            {% for post in site.screenings %}
+                {% unless page.filter_playlist %}
                     <li class="playlist_item randomize embargoed" date="{{ post.date | date_to_xmlschema }}">
                         <a href="{{ post.url }}">
                             <div class="playlist_item_content">
-                                <img class="playlist_item_image" src="{{ post.preview_image }}" alt="" />
+                                <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
                                 <div class="playlist_item_categories">
                                     {% for category in post.categories %}
-                                        {% unless category == "nods" %}
                                         <span class="category">{{ category }}</span>
+                                    {% endfor %}
+                                </div>
+                                <div class="playlist_item_title">{{ post.title }}</div>
+                            <div>
+                        </a>
+                    </li>
+                {% endunless %}
+                {% if post.categories contains page.filter_playlist %}
+                    <li class="playlist_item randomize embargoed" date="{{ post.date | date_to_xmlschema }}">
+                        <a href="{{ post.url }}">
+                            <div class="playlist_item_content">
+                                <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
+                                <div class="playlist_item_categories">
+                                    {% for category in post.categories %}
+                                        {% unless category contains "Awards" or category contains "Finalists" %}
+                                            <span class="category">{{ category }}</span>
                                         {% endunless %}
                                     {% endfor %}
                                 </div>
@@ -57,3 +100,4 @@ title: MAST by Salt Lake Film Society
     </div>
 </div>
 <!-- /CONTENT -->
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ca2b2b9c2f76906"></script>

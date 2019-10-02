@@ -13,71 +13,62 @@ $(function () {
     mast_init_discord();
     mast_prep_cognito();
     mast_render_video();
-    mast_prompt_vote('labtopicspoll');
+    mast_prompt_lab('bonanzamonth');
     mast_prep_playlist_carousel();
+    mast_prep_gallery_carousel();
 });
 
 function mast_init_youtube(which) {
     var videos = [
         {
-            id: "Y5YTV8TZT8U",
-            start: 4,
-            duration: 30,
-            title: "Reel",
-            attribution: "Gabriela Badillo"
+            id: "WH6hhKf1twU",
+            start: 1,
+            duration: 80,
+            title: "We'll Never Feel Bad Anymore",
+            attribution: "Michael Grover"
         },
         {
-            id: "H4-96GqPup4",
-            start: 80,
-            duration: 90,
-            title: "Brush: A Fox Tale",
-            attribution: "Willi Anton, Faustina Arriola"
-        },
-        {
-            id: "XxV4aUrGgeg",
-            start: 48,
-            duration: 180,
-            title: "The Legend of the Crab Phare",
-            attribution: "Supinfocom Valenciennes",
-            zoom: 1.2
-        },
-        {
-            id: "KwCtWfwYlkw",
-            start: 120,
-            duration: 120,
-            title: "The Box",
-            attribution: "Merve Cirisoglu Cotur, Yenal Cetin, Erhan Gezen"
-        },
-        {
-            id: "v7jP4T26tLs",
-            start: 20,
-            duration: 90,
+            id: "7htN5KDxyP8",
+            start: 10,
+            duration: 60,
             title: "Un Sacré Mariage!",
-            attribution: "Francis Papillon, Gregory Verreault"
-        },
-        {
-            id: "gZyjJtBIlow",
-            start: 90,
-            duration: 190,
-            title: "A Fox and a Mouse",
-            attribution: "Camille Chaix et al",
-            zoom: 1.2
-        },
-        {
-            id: "x7QqijTXvaU",
-            start: 197,
-            duration: 120,
-            title: "CALDERA",
-            attribution: "Evan Viera",
-            zoom: 1.4
+            attribution: "Francis Papillon & Gregory Verreault"
         },
         {
             id: "VBps1IvCyj0",
-            start: 60,
-            duration: 180,
+            start: 15,
+            duration: 60,
             title: "Lost and Found",
-            attribution: "Andrew Goldsmith & Bradley Slabe",
-            zoom: 1.2
+            attribution: "Andrew Goldsmith & Bradley Slabe"
+        },
+        {
+            id: "c6bUOMFEoWg",
+            start: 10,
+            duration: 60,
+            title: "Being Good",
+            attribution: "Jenny Harder"
+        },
+        {
+            id: "wsquzyv2lXc",
+            start: 1,
+            duration: 58,
+            title: "Sea Haunt",
+            attribution: "KC Tobey"
+        },
+        {
+            id: "ZIl0Nqpt41A",
+            start: 20,
+            duration: 90,
+            title: "Navajo Tales: The Stars",
+            attribution: "Julia Berrio et al",
+            zoom: 1.4
+        },
+        {
+            id: "uawLHDmu9C4",
+            start: 10,
+            duration: 47,
+            title: "Community Patrol",
+            attribution: "Andrew James"
         }
     ];
     which = which || (Math.floor(Math.random() * videos.length));
@@ -259,20 +250,20 @@ function onVimeoPlayerStateChange(state) {
     }
 }*/
 
-function mast_prompt_vote(cookie) {
-    var vote = $('.vote');
+function mast_prompt_lab(cookie) {
+    var lab = $('.featured-lab');
 
     if (document.cookie.indexOf(cookie) < 0) {
         setTimeout(function () {
-            vote.addClass('active').find('.yes').click(function () {
-                document.location.href = '#poll';
+            lab.addClass('active').find('.yes').click(function () {
+                document.location.href = '#currentlab';
                 document.cookie = cookie + '=true';
-                vote.removeClass('active');
+                lab.removeClass('active');
             });
 
-            vote.find('.no').click(function () {
+            lab.find('.no').click(function () {
                 document.cookie = cookie + '=true';
-                vote.removeClass('active');
+                lab.removeClass('active');
             });
         }, 1500);
     }
@@ -308,10 +299,10 @@ function mast_prep_playlist_carousel() {
             nav: false,
             navSpeed: false,
             responsive: {
-                0:      { items: 2 },
-                500:    { items: 5 },
-                1600:   { items: 6 },
-                2000:   { items: 8 }
+                0:      { items: 2 + (parseInt(carousel.attr('extras')) || 0) },
+                500:    { items: 5 + (parseInt(carousel.attr('extras')) || 0) },
+                1600:   { items: 6 + (parseInt(carousel.attr('extras')) || 0) },
+                2000:   { items: 8 + (parseInt(carousel.attr('extras')) || 0) }
             }
         });
         
@@ -325,6 +316,28 @@ function mast_prep_playlist_carousel() {
         next.on('click',function(){
             carousel.trigger('next.owl.carousel');
             return false;
+        });
+    });
+}
+
+function mast_prep_gallery_carousel() {
+    $('.gallery.owl-carousel').each(function(k, v){
+        var carousel = $(v);
+        carousel.owlCarousel({
+            loop: false,
+            items: 2,
+            lazyLoad: true,
+            margin: 5,
+            autoplay: false,
+            smartSpeed: 1000,
+            dots: true,
+            nav: false,
+            navSpeed: false,
+            responsive: {
+                0:      { items: 2 },
+                1600:   { items: 3 },
+                2000:   { items: 4 }
+            }
         });
     });
 }

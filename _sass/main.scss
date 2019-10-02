@@ -150,6 +150,29 @@ $scheme-snow-text-color: $black;
 /*	HOME
 /*---------------------------------------------------*/
 #home {
+    /*.countdown-clock-container {
+        position: absolute;
+        top: 200px;
+        left: 50px;
+
+        @media (max-width: $mobile-width) {
+            transform: scale(0.5);
+            left: -18vh;
+            width: 75vh;
+            top: 300px;
+        }
+
+        .flip-clock-label {
+            color: white !important;
+        }
+
+        .label {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+    }*/
+    
     #youtube {
         position: absolute;
         width: 100%;
@@ -200,7 +223,7 @@ $scheme-snow-text-color: $black;
                 font-family: $font-family;
                 font-size: 12px;
                 text-align: right;
-            }            
+            }         
 
             @media (max-width: $mobile-width) {
                 display: none;
@@ -215,7 +238,7 @@ $scheme-snow-text-color: $black;
             background: url(https://s3.amazonaws.com/sporklabs/MastStudio/img/snakes_by_jake_wyatt.jpg) no-repeat;
         }
 
-        .vote {
+        .featured-lab {
             z-index: 210;
             width: 600px;
             background: $scheme-navy-color;
@@ -225,6 +248,8 @@ $scheme-snow-text-color: $black;
             font-size: 45px;
             font-weight: 700;
             text-align: center;
+            padding-top: 10px;
+            line-height: 1.4;
             position: absolute;
             overflow: hidden;
             left: calc(50% - 300px);
@@ -251,6 +276,8 @@ $scheme-snow-text-color: $black;
             }
 
             .buttons {
+                margin-top: 10px;
+
                 > div {
                     width: calc(50% - 20px);
                     cursor: pointer;
@@ -406,8 +433,22 @@ $scheme-snow-text-color: $black;
             }
         }
         
-        .playlist {
-            margin-top: 180px;
+        .playlists {
+            margin-top: 130px;
+
+            row {
+                padding-top: 50px;
+
+                .heading {
+                    font-size: 20px;
+                    font-weight: bold;
+                    position: relative;
+                    left: 10px;
+                    color: white;
+                    text-transform: uppercase;
+                    margin-top: 20px;
+                }
+            }
         }
     }
 }
@@ -491,7 +532,57 @@ a.button {
 
     &.half-width {
         width: 35%;    
-    }    
+    }
+
+    &.spaced {
+        margin: 10px 0;
+    }
+}
+
+.gallery {
+    .owl-item {
+        li {
+            list-style: none;
+
+            .playlist_item_caption {
+                font-size: 10px;
+                line-height: 1.4;
+                color: white;
+                background: black;
+                padding: 8px;
+            }
+        }
+    }
+    .owl-dots {
+        height: 20px;
+        margin: 10px 0;
+        text-align: center;
+
+        .owl-dot {
+            height: 20px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+
+            span {
+                width: 10px;
+                height: 10px;
+                margin: 5px 7px;
+                background: #D6D6D6;
+                display: block;
+                -webkit-backface-visibility: visible;
+                transition: opacity .2s ease;
+                border-radius: 30px;
+            }
+
+            &.active,
+            &:hover {
+                span {
+                    background: #869791;
+                }
+            }
+        }
+    }
 }
 
 .donate {
@@ -525,22 +616,25 @@ a.button {
 
 .macro_list {
     .list_li {
-        .title_item {
-            @include text-outline($black, 1px, 3px);
-        }
+        .blog_definitions_wrap {
+            color: white;
 
-        .category_blog {
-            color: $black !important;
-            font-weight: 700 !important;
-        }
+            .title_item {
+                @include text-outline($black, 1px, 3px);
+            }
 
-        .category_blog {
-            background: none !important;
-            padding: 0 !important;
+            .category_blog {
+                font-weight: 700 !important;
+            }
 
-            span {
-                margin-right: 2px;
-                padding: 5px 10px;
+            .category_blog {
+                background: none !important;
+                padding: 0 !important;
+
+                span {
+                    margin-right: 2px;
+                    padding: 5px 10px;
+                }
             }
         }
     }
@@ -688,6 +782,19 @@ a.button {
     padding-bottom: 100px;
 }
 
+pre {
+    overflow-x: auto !important;
+}
+
+attribution {
+    float: right;
+    padding-right: 15px;
+
+    &:before {
+        content: '— ';
+    }
+}
+
 #discord {
     position: fixed;
     width: 275px;
@@ -761,6 +868,10 @@ a.button {
 /*	COLOR SCHEMES
 /*---------------------------------------------------*/
 .color-scheme {
+    .subheading {
+        line-height: 1.3;
+    }
+
     &.plum {
         background: $scheme-plum-color;
 
@@ -1158,7 +1269,8 @@ a.button {
 /*	WATCH
 /*---------------------------------------------------*/
 body {
-    &.watch {
+    &.watch,
+    &.voices-seen {
         background-color: #000000;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23111111' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%231c1c1c' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23262626' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23313131' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%233c3c3c' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
         background-attachment: fixed;
@@ -1198,10 +1310,6 @@ body {
     color: white;
 
     @include ease(1s);
-
-    @media (max-width: $mobile-width) {
-        height: 100vmax;
-    }
 
     .watch_header {
         @include ease();
@@ -1260,29 +1368,45 @@ body {
         }
     }
 
-    .player {
+    .player,
+    .viewer {
         position: relative;
-        width: 100%;
-        min-height: 480px;
         transform: scale(0.95);
         margin: 0;
         padding: 0;
         z-index: 10;
-        border-radius: 10px;
-        overflow: hidden;
+
+        @include ease();
+    }
+
+    .player {
+        background: black;
+        width: 100%;
+        min-height: 480px;
         -webkit-box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
         -moz-box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
         box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
-        background: black;
-
-        @include ease();
+        overflow: hidden;
+        border-radius: 10px;
 
         @media (max-width: $mobile-width) {
-            min-height: 200px;
+            min-height: 150px;
         }
 
         &.playing {
             transform: none;
+        }
+    }
+
+    .viewer {
+        width: 100%;
+
+        img {
+            max-height: 90vh;
+            -webkit-box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
+            box-shadow: 0px 0px 66px -9px rgba(0,0,0,1);
+            border-radius: 10px;
         }
     }
 
@@ -1297,17 +1421,139 @@ body {
         z-index: 1;
         line-height: 22px;
 
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+68&0+0,0.65+68 */
-        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 68%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 68%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+18&0+0,0.65+18 */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 18%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 18%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 18%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 
         @include ease();
 
-        @media (max-width: $mobile-width) {
-            padding: 100px 20px 20px;
-            top: -80px;                    
+        .description {
+            text-align: right;
+            padding: 20px 0 20px 20px;
+            margin-bottom: 20px;
+            color: $light-grey;
+            float: right;
+            width: 60%;
+
+            @media (max-width: $mobile-width) {
+                width: 90%;
+            }
+
+            p {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        h4 {
+            clear: both;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .content {
+            /*max-height: 15vmax;
+            overflow: auto;
+
+            @media (max-width: $mobile-width) {
+                max-height: 20vmax;
+            }
+
+            &::-webkit-scrollbar
+            {
+                width: 8px;
+                border-radius: 6px;
+                background-color: rgba($light-grey, 0.1);
+            }
+
+            &::-webkit-scrollbar-thumb
+            {
+                border-radius: 6px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                background-color: $light-grey;
+            }*/
+
+            a {
+                color: white;
+                font-weight: bold;
+            }
+
+            star {
+                display: inline-block;
+                width: 100%;
+                margin: 20px 0;
+
+                &:after {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: bold;
+                    content: '*';
+                }
+            }
+
+            block {
+                margin: 0 25% 20px;
+                display: inline-block;
+
+                @media (max-width: $mobile-width) {
+                    margin: 0 20px 20px;
+                }    
+            }
+
+            subheading {
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: bold;
+                margin: 30px 0 15px;
+                text-align: center;
+                width: 100%;
+            }
+
+            .addthis_inline_share_toolbox {
+                transform: scale(0.7);
+                position: absolute;
+                right: -7px;
+                margin-top: -50px;
+            }
+
+            blockquote {
+                margin-left: 20px;
+                color: $light-grey;
+
+                p {
+                    &:before,
+                    &:after {
+                        position: relative;
+                        top: 15px;
+                        display: inline-block;
+                        vertical-align: bottom;
+                        height: 10px;
+                        line-height: 10px;
+                        letter-spacing: 10px;
+                        font-size: 70px;
+                        opacity: .1;                
+                    }
+        
+                    &:first-child {
+                        &:before {
+                            content: '\201C';
+                        }
+                    }
+
+                    &:last-child {
+                        &:after {
+                            left: 6px;
+                            content: '\201D';
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1324,12 +1570,63 @@ body {
             }
         }
     }
+
+    &.category_feature {
+        .watch_playlist {
+            top: 60px;
+        }
+
+        .player {
+            top: 340px;
+
+            @media (max-width: $mobile-width) {
+                top: 200px;
+            }
+        }
+
+        .watch_info {
+            top: -90px;
+            background: none;
+
+            .content {
+                display: none;
+            }
+        }
+    }
+}
+
+.playlists {
+    .heading {
+        font-size: 20px;
+        font-weight: bold;
+        position: relative;
+        left: 10px;
+        color: white;
+        text-transform: uppercase;
+    }
 }
 
 .playlist {
     z-index: 1;
 
     .owl-stage-outer {
+    }
+
+    @media (max-width: $mobile-width) {
+        &[extras="1"],
+        &[extras="2"],
+        &[extras="3"] {
+            .playlist_item_categories {
+                display: none;
+            }
+        }
+
+        &[extras="2"],
+        &[extras="3"] {
+            .playlist_item_title {
+                display: none;
+            }
+        }
     }
 
     .playlist_item {

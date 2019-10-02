@@ -22,15 +22,15 @@ Entrants are encouraged to collaborate in pairs, and should submit an original p
 
 Photograph: The photograph may be color or black-and-white, and should be at least 4k resolution. It must depict one person, or multiple people. Please be sure to get any needed <a href="https://www.ppa.com/assets/documents/modelreleasewhitepaper.pdf" target="_NEW">model releases</a> from the photographed subjects to keep in your records.
 
-Character profile or character-centered short story: in prose must be between 2,500 words and 10,000 words in length; in poetry may be any length. There is no required format, style, content rating, audience, or genre—it's an open field!
+Character profile or character-centered short story: in prose must be between approximately 2,500 words and 10,000 words in length; in poetry may be any length. There is no required format, style, content rating, audience, or genre—it's an open field!
 
 All submissions must include both a photograph and a character profile/story. The photographer and writer may be the same person, but need not be—collaboration is encouraged. Award money will be split equally amongst all collaborators on all winning entries.
 
 # Awards
 
-Grand prize winner: A single grand prize winner will be selected. A cash award of $2,000 USD will be divided between the writer and photographer of the winning submission), along with complimentary enrollment (for both the writer and photographer) in all 2019 MAST labs, masterclasses, and networking events.
+Grand Prize Winner: A single Grand Prize Winner will be selected. A cash award of $2,000 USD will be divided between the writer and photographer of the winning submission), along with complimentary enrollment (for both the writer and photographer) in all 2019 MAST labs, masterclasses, and networking events.
 
-Honorable mentions: Multiple honorable mentions may be selected. A cash award of $200 will be given to each (divided between writer and photographer).
+Winners: Multiple Winners may be selected. A cash award of $200 will be given to each (divided between writer and photographer). (When the contest was announced, this tier was dubbed "Honorable Mention". We determined, however, that "Winner" was more in keeping with the spirit of the contest. A change in terminology was made, but the awards themselves were not altered.)
 
 Awards will be announced on March 31st.
 

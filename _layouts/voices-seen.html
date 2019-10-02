@@ -1,0 +1,90 @@
+---
+layout: basic
+title: MAST by Salt Lake Film Society
+---
+<!-- CONTENT -->
+<div class="watch_content category_feature voices_seen">
+    <div class="watch_header">
+        <a class="back" href="javascript:window.history.back();">
+            <img src="/assets/img/svg/back.svg" />
+        </a>
+        <a class="home" href="/">
+            <div class="title">
+                {% if page.image %}
+                    <span class="small">big</span>
+                    <span class="screenings">readings</span>
+                {% else %}
+                    <span class="small">small</span>
+                    <span class="screenings">screenings</span>
+                {% endif %}
+            </div>
+            <img src="/assets/img/branding/mast-white-small.png" />
+        </a>
+    </div>
+    <div class="watch_playlist playlists">
+        <div class="heading">Voices Seen</div>
+        <ul class="playlist owl-carousel">
+            {% for post in site.voices_seen %}
+                <li class="playlist_item randomize embargoed" date="{{ post.date | date_to_xmlschema }}">
+                    <a href="{{ post.url }}">
+                        <div class="playlist_item_content">
+                            <img class="playlist_item_image" src="/assets/img/screenings/{{ post.title | slugify }}.jpg" alt="" />
+                            <div class="playlist_item_categories">
+                                {% for category in post.categories %}
+                                    <span class="category">{{ category }}</span>
+                                {% endfor %}
+                            </div>
+                            <div class="playlist_item_title">{{ post.title }}</div>
+                        <div>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% if page.vimeo %}
+        <div class="player">
+            <div id="{{ page.vimeo }}" class="video vimeo"></div>
+        </div>
+    {% endif %}
+
+    {% if page.youtube %}
+        <div class="player">
+            <div id="{{ page.youtube }}" class="video youtube"></div>
+        </div>
+    {% endif %}
+
+    {% if page.image %}
+        <div class="viewer">
+            <img src="{{ page.image }}" />
+        </div>
+    {% endif %}
+
+    <div class="watch_info">
+        <div class="content">
+            <div class="addthis_inline_share_toolbox"></div>
+
+            <div class="category_description">
+                <h3><em>Voices Seen</em> Winners</h3>
+
+                <em>Sea Haunt</em> by KC Tobey<br />
+                <em>Navajo Tales: The Stars</em> by Julia Berrio, Jared Mathews, and Dallin Penman<br />
+                <em>Me, By J-Money</em> by Daniel Bruson<br />
+                <em>The Old Snake Fell Asleep On The Grass</em> by Dominica Harrison<br />
+                <em>We'll Never Feel Bad Anymore</em> by Michael Grover<br />
+                <em>68 Voices: Matlatzinca</em> by Gabriella Badillo<br />  
+
+                <star></star>  
+            </div>
+
+            {% if page.description %}
+                <div class="description">
+                    {{ page.description | markdownify }}
+                </div>
+            {% endif %}
+
+            {{ content }}
+        </div>
+    </div>
+</div>
+<!-- /CONTENT -->
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ca2b2b9c2f76906"></script>

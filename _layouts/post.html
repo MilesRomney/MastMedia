@@ -31,6 +31,24 @@ title: MAST by Salt Lake Film Society
                                     </div>
                                 </div>
                                 <div class="macro_tm_blog_definition_wrap article-text anchor_nav" markdown="1">
+                                    {% if page.gallery_images %}
+                                        <div class="gallery owl-carousel">
+                                            {% for image in page.gallery_images %}
+                                                <li class="playlist_item">
+                                                    <a>
+                                                        <div class="playlist_item_content">
+                                                            <a href="{{ image.url }}" target="_PICTURE">
+                                                                <img class="playlist_item_image" src="{{ image.url }}" />
+                                                            </a>
+                                                            <div class="playlist_item_caption">
+                                                                {{ image.caption }}
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
                                     {{ content }}
                                 </div>
                                 {% if page.cognito_form %}
