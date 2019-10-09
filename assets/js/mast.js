@@ -13,7 +13,7 @@ $(function () {
     mast_init_discord();
     mast_prep_cognito();
     mast_render_video();
-    mast_prompt_lab('bonanzamonth');
+    //mast_prompt_lab('bonanzamonth');
     mast_prep_playlist_carousel();
     mast_prep_gallery_carousel();
 });

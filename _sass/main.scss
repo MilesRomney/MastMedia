@@ -477,6 +477,28 @@ $scheme-snow-text-color: $black;
 }
 
 /*---------------------------------------------------*/
+/*	SCREENINGS
+/*---------------------------------------------------*/
+#big-screenings {
+    padding-top: 100px;
+
+    background: 
+    linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);	
+    background-size: 2em 2em;
+    background-color: #232323;
+
+    .underlying-header {
+        font-family: Vibes;
+        text-transform: none;
+        font-weight: 400;
+        margin-bottom: -25px;
+    }
+}
+
+/*---------------------------------------------------*/
 /*	NODS
 /*---------------------------------------------------*/
 #nods {
@@ -514,6 +536,23 @@ $scheme-snow-text-color: $black;
                 @media (max-width: $mobile-width) {
                     font-size: 25px;
                 }    
+            }
+        }
+    }
+}
+
+.article-text {
+    .annotation {
+
+        p {
+            display: block;
+            font-size: 20px;
+            color: white !important;
+            background: black;
+            padding: 5px 20px;
+
+            a {
+                color: white;
             }
         }
     }
@@ -823,7 +862,14 @@ attribution {
         border-bottom-left-radius: 7px;
         color: $white;
         background: $discord;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
 
+        &:before, &:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
         @include ease(.8s);
 
         @media (max-width: $mobile-width) {
@@ -861,6 +907,137 @@ attribution {
         }
     50% {
         -webkit-transform: rotate(1deg);
+    }
+}
+
+.half {
+    width: calc(50% - 11px);
+
+    @media (max-width: $mobile-width) {
+        width: calc(100% - 14px);
+    }
+}
+
+.left {
+    float: left;
+    margin: 7px;
+}
+
+.right {
+    float: right;
+    margin: 7px 7px 7px 0;
+
+    @media (max-width: $mobile-width) {
+        margin: 7px;
+    }
+}
+
+.flush {
+    padding-top: 0 !important;
+}
+
+.framed {
+    overflow: hidden;
+    border: 2px solid black;
+    -webkit-box-shadow: 2px 2px 0px 1px #FA7268;
+    -moz-box-shadow: 2px 2px 0px 1px #FA7268;
+    box-shadow: 2px 2px 0px 1px #FA7268;
+    margin-bottom: 20px;
+}
+
+/* VirtuousCRM giving form */
+#donation-forms {
+    background: white;
+    padding: 20px;
+
+    .demarked {
+        border-bottom: 1px solid rgba(42, 170, 223, 0.5);
+        padding: 0 0 15px 0;
+        margin: 0 0 15px 0;
+
+        .legend {
+            position: relative;
+
+            span {
+                display: block;
+                color: rgb(42, 170, 223);
+                background: white;
+                position: absolute;
+                left: calc(50% - 15px);
+                top: -4px;
+                width: 30px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .description {
+        p {
+            display: block;
+            font-size: 20px;
+            line-height: 1.4;
+            margin: 10px 0 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-weight: 100;
+
+            strong {
+                font-weight: 600;
+            }
+        }
+    }
+
+    #paypal {
+        text-align: center;
+
+        img#paypal-logo {
+            width: 93px;
+            padding-bottom: 5px;
+        }
+    }
+
+    [name=vForm] {
+        .v_designation {
+            display: none;
+        }
+
+        .v_gaw {
+            text-align: center;
+
+            .v_gao {
+                padding: 10px 15px;
+            }
+        }
+
+        .v_iw {
+            p {
+                display: block;
+                font-size: 12px;
+                line-height: 1.6;
+                margin: 10px 0;
+            }
+        }
+
+        .v_txm {
+            p {
+                font-size: 25px;
+                line-height: 1.4;
+                margin: 30px 0 20px;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.6);
+                font-weight: 100;
+            }
+        }
+
+        .v_fw {
+            margin: 0;
+        }
+
+        input {
+            min-width: 0;
+        }
     }
 }
 
