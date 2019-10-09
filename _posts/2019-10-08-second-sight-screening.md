@@ -57,7 +57,7 @@ The screening will take place at 6pm on Thursday, October 10th, at the SLFS-oper
     </div>
 </div>
 
-Code Sax is the Grand Prize Winner of MAST’s 2019 “Microdocs” competition, and a MAST grant recipient and fellow. Through MAST, Cole is now working on the feature expansion of _Second Sight_ with mentorship from Oscar- and Emmy-nominee Irene Taylor Brodsky. Through MAST, Cole has also been mentored by Jeremiah Zagar, Floyd Russ, and Eric Doctorow.
+Cole Sax is the Grand Prize Winner of MAST’s 2019 “Microdocs” competition, and a MAST grant recipient and fellow. Through MAST, Cole is now working on the feature expansion of _Second Sight_ with mentorship from Oscar- and Emmy-nominee Irene Taylor Brodsky. Through MAST, Cole has also been mentored by Jeremiah Zagar, Floyd Russ, and Eric Doctorow.
 
 This short cinematic docu-drama is about Joanaly Laniohan, a blind mother of four, her husband Virgilio, and their family’s journey to help their mother regain her sight. Second Sight is about this family's journey to overcome blindness, but also about the selfless people who work daily to change the fate of similar families all over the world.
 
