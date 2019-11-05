@@ -74,7 +74,7 @@ $scheme-snow-text-color: $black;
     }
 
     @media (max-width: $mobile-width) {
-        padding: 5px 20px !important;
+        padding: 5px 15px !important;
     }
 }
 
@@ -448,6 +448,21 @@ $scheme-snow-text-color: $black;
                     text-transform: uppercase;
                     margin-top: 20px;
                 }
+            }
+        }
+    }
+
+    #mission {
+        #donation-forms {
+            max-width: 400px;
+            float: left;
+            margin: 100px 30px 20px 25%;
+            border-radius: 5px;
+
+            @media (max-width: $mobile-width) {
+                max-width: 100%;
+                border-radius: 0;
+                margin: 100px 0 25px;
             }
         }
     }
@@ -949,6 +964,14 @@ attribution {
 #donation-forms {
     background: white;
     padding: 20px;
+    z-index: 1002;
+
+    &.closed {
+        [name=vForm] {
+            height: 90px;
+            overflow: hidden;
+        }
+    }
 
     .demarked {
         border-bottom: 1px solid rgba(42, 170, 223, 0.5);
@@ -999,6 +1022,8 @@ attribution {
     }
 
     [name=vForm] {
+        height: auto;
+
         .v_designation {
             display: none;
         }

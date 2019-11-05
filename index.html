@@ -22,7 +22,7 @@ title: MAST by Salt Lake Film Society
                     MAST is a media accelerator studio, a non-profit program of the Salt Lake Film Society that grows artists into artist entrepreneurs.
                 </div>
             </div>
-            <div class="donate"><a class="button report_scroll_state" target="_DONATE" href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E157586&id=1">Donate <span class="smile"></span></a></div>
+            <div class="donate"><a class="button report_scroll_state" href="#mission">Donate <span class="smile"></span></a></div>
         </div>
     </div>
     <!-- /HOME -->
@@ -155,6 +155,13 @@ title: MAST by Salt Lake Film Society
             Our Mission
         </div>
         <div class="macro_tm_about_me_wrap">
+            {% capture home_donation_appeal %}
+                <p>
+                    We're a non-profit building the next generation of storytellers. <strong>We can only do it with your support!</strong>
+                </p>
+            {% endcapture %}
+            {% include donate.html paypal_item_name="MAST Mission" virtuous_form="AD1CD9EE-4BBD-438F-AF8C-38D63C6A6970" donation_appeal=home_donation_appeal %}            
+
             <div class="article-text">
                 <p>At MAST, we build artists into artist-entrepreneurs.</p>
                 <p>We are, all of us, defined by our stories. They are the stuff of our empathy, our hope, our ambitions. Our evolution. They give us our consciousness, our soul. We tell these stories, we all do; we all <em>should</em>. And some few can show them, conjure them visually through language, art, and motion.</p>
@@ -162,11 +169,6 @@ title: MAST by Salt Lake Film Society
                 <p>MAST exists to discover artists, then connect, nurture, and empower them, grow them into tech-savvy artist entrepreneurs. These artist entrepreneurs will then be better equipped to create their art from <em>where they are</em>, raising a diaspora of accessible art in every city across the globe. A diverse and democratic art. A free art.</p>
                 <p>This is our dream. This is our <em>mission</em>. And it’s going to be a whole lot of fun.</p>
                 <p>Join us.</p>
-
-                <div class="buttons">
-                    <a class="button half-width left" href="#now">Contests</a>
-                    <a class="button half-width right" target="_DONATE" href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E157586&id=1">Donate</a>
-                </div>
             </div>
         </div>
     </div>

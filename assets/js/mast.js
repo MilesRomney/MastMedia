@@ -16,6 +16,7 @@ $(function () {
     //mast_prompt_lab('bonanzamonth');
     mast_prep_playlist_carousel();
     mast_prep_gallery_carousel();
+    mast_prep_donations();
 });
 
 function mast_init_youtube(which) {
@@ -339,6 +340,12 @@ function mast_prep_gallery_carousel() {
                 2000:   { items: 4 }
             }
         });
+    });
+}
+
+function mast_prep_donations() {
+    $('.virtuous-form').click(function() {
+        $('#donation-forms').removeClass('closed');
     });
 }
 

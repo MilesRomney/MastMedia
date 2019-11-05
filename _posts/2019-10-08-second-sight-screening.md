@@ -2,7 +2,7 @@
 layout: post
 title: "MAST Screens Festival-bound SECOND SIGHT"
 subtitle: "MAST screens MAST fellow Cole Sax's gorgeous short documentary SECOND SIGHT at the Broadway Centre Cinemas."
-description: "Cole Sax completes his short film SECOND SIGHT, screens it at Broadway Centre Cinemas. Cole is now working on his feature expansion with mentorship through MAST from Oscar-nominee Irene Taylor Brodsky."
+description: "Cole Sax completes his short film SECOND SIGHT, screens it at Broadway Centre Cinemas."
 categories: [Screenings]
 author: "Miles Romney"
 color_scheme: "snow"
@@ -23,37 +23,18 @@ The screening will take place at 6pm on Thursday, October 10th, at the SLFS-oper
                 6pm October 10th, 2019 @ <a href="https://goo.gl/maps/CKGDSqC3fsB8fT8J7" target="_NEW">Broadway Centre Cinemas,</a> followed by Q&A with the filmmakers.
             </p>
         </div>
-        <img src="/assets/img/cole-sax-second-sight.jpg" />
+        <img src="/assets/img/posts/cole-sax-second-sight.jpg" />
     </div>
-    <div id="donation-forms" class="half right flush">
-        <div class="demarked description flush">
+    <div class="half right flush">
+        {% capture screenings_donation_appeal %}
             <p>
                 MAST sponsors FREE screenings of extraordinary films by MAST fellows, members, mentors, and contest winners. Your donations make this possible.
             </p>
             <p>
                 <strong>Show us some love!</strong>
-            </p>
-        </div>        
-        <div id="paypal" class="demarked">
-            <img src="/assets/img/paypal-logo.png" id="paypal-logo" />
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_NEW">
-                <input type="hidden" name="cmd" value="_donations" />
-                <input type="hidden" name="business" value="memberships@saltlakefilmsociety.org" />
-                <input type="hidden" name="item_name" value="MAST Screenings" />
-                <input type="hidden" name="currency_code" value="USD" />
-                <input type="hidden" name="amount" value="" />
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-            </form>
-            <div class="legend"><span>or</span></div>
-        </div>
-        <script 
-            src="https://cdn.virtuoussoftware.com/virtuous.embed.min.js" 
-            data-vform="000977F3-CEC4-46B9-91B7-D5B7D97E9EE5" 
-            data-orgId="1395" 
-            data-isGiving="true"
-            data-dependencies="[]">
-        </script>    
+            </p>        
+        {% endcapture %}
+        {% include donate.html paypal_item_name="MAST Screenings" virtuous_form="000977F3-CEC4-46B9-91B7-D5B7D97E9EE5" donation_appeal=screenings_donation_appeal %}
     </div>
 </div>
 
